@@ -1,5 +1,5 @@
 //@version=6
-strategy("VibeBOT v2.3 (USD, Modes: Trend/Pullback, Breakout, MeanReversion)", overlay=true, pyramiding=50, default_qty_type=strategy.fixed, initial_capital=1000000, calc_on_order_fills=true, calc_on_every_tick=false, process_orders_on_close=true, max_lines_count=500)
+strategy("OrangePulse v3.0 (USD, Modes: Trend/Pullback, Breakout, MeanReversion)", overlay=true, pyramiding=50, default_qty_type=strategy.fixed, initial_capital=1000000, calc_on_order_fills=true, calc_on_every_tick=false, process_orders_on_close=true, max_lines_count=500)
 
 // ====== Time Window ======
 int start_time = input.time(timestamp("01 Sep 2025 00:00"), "Start Trading Time", tooltip="Bot will only trade after this date/time")
@@ -685,10 +685,10 @@ if use_sl_profit_at_price and in_pos_e
     // Only set target if not already set (lock once)
     if na(sl_profit_price_target)
         if sl_profit_type == "Percent"
-            // Izračunaj ceno iz % (mora biti v profit zoni)
+            // Calculate price from % (must be in profit zone)
             float sl_profit_calc = direction == "LONG" ? (pos_avg_e * (1 + sl_profit_value / 100.0)) : (pos_avg_e * (1 - sl_profit_value / 100.0))
             
-            // Validiraj, da je v profit zoni (med AVG in trenutno ceno)
+            // Validate that it's in profit zone (between AVG and current price)
             bool valid_sl_profit_pct = false
             if direction == "LONG"
                 valid_sl_profit_pct := (sl_profit_calc > pos_avg_e) and (sl_profit_calc < close)
@@ -698,7 +698,7 @@ if use_sl_profit_at_price and in_pos_e
             if valid_sl_profit_pct
                 sl_profit_price_target := sl_profit_calc
         else  // "Price"
-            // Validiraj absolutno ceno
+            // Validate absolute price
             bool valid_sl_profit_price = false
             if direction == "LONG"
                 valid_sl_profit_price := (sl_profit_value > pos_avg_e) and (sl_profit_value < close)
@@ -1064,11 +1064,11 @@ if ladder_active and (strategy.position_size != 0) and in_time_window and so_num
         bool  touched_next = direction == "LONG" ? (low <= level_next) : (high >= level_next)
         deepest_touched := touched_next
         
-        // Monotonic guard: SO naj se ne more odpreti višje (LONG) oz. nižje (SHORT) od prejšnjega fill-a
+        // Monotonic guard: SO cannot fill higher (LONG) or lower (SHORT) than previous fill
         float ref_prev_fill = na(last_so_fill_price) ? (so_next_idx > 0 ? array.get(so_prices, so_next_idx - 1) : na) : last_so_fill_price
 
-        // Za LONG želimo: fill na close <= min(level_next, ref_prev_fill - tick)
-        // Za SHORT želimo: fill na close >= max(level_next, ref_prev_fill + tick)
+        // For LONG we want: fill at close <= min(level_next, ref_prev_fill - tick)
+        // For SHORT we want: fill at close >= max(level_next, ref_prev_fill + tick)
         float guard_long_max = na(ref_prev_fill) ? level_next : math.min(level_next, ref_prev_fill - syminfo.mintick)
         float guard_short_min = na(ref_prev_fill) ? level_next : math.max(level_next, ref_prev_fill + syminfo.mintick)
 
@@ -1209,7 +1209,7 @@ if ladder_active and (strategy.position_size != 0) and in_time_window and so_num
                     float _next = array.get(so_prices, so_next_idx)
                     f_draw_so_line(_next, so_next_idx + 1)
 
-                // --- Inline SO alert emit (samo če je msg ne-prazen) ---
+                // --- Inline SO alert emit (only if msg is non-empty) ---
                 if (wt_enable != cm_enable) and (so_alert_msg != "")
                     if can_send_alert_this_bar
                         alert(so_alert_msg, alert.freq_once_per_bar)
@@ -1541,7 +1541,7 @@ string slso_field =
 string sl_profit_field = "OFF"
 if use_sl_profit_at_price and in_pos and not na(sl_profit_price_target)
     if sl_profit_type == "Percent"
-        // Prikaži % od AVG (ne targeta, ampak configure vrednost)
+        // Display % from AVG (not target, but configured value)
         sl_profit_field := str.tostring(sl_profit_value, "#.##") + "%"
     else
         int sl_profit_int = int(math.round(sl_profit_price_target))
@@ -1550,7 +1550,7 @@ if use_sl_profit_at_price and in_pos and not na(sl_profit_price_target)
 // Construct Row 10 (SL exits)
 string sl_row = sl_field + " / " + slso_field + " / " + sl_profit_field
 
-// Sestavljeno polje v novem vrstnem redu, brez presledkov
+// Composite field in new order, without spaces
 //string tp_trail_sl_slso = tp_field + " / " + trail_field + " / " + sl_field + " / " + slso_field
 
 
@@ -1616,10 +1616,10 @@ color tbl_value_txt = color.black
 
 // Status (ON/PAUSED/OFF) – should stand out, therefore low transparency (~20)
 color status_bg =
-     bot_stopped      ? color.rgb(220, 38, 38, 20)   // OFF (rdeča)
-   : pause_now_paused ? color.rgb(245, 158, 11, 20)  // PAUSED (oranžna)
-   : pause_now_armed  ? color.rgb(139, 92, 246, 20)  // ARMED (vijolična)
-                      : color.rgb(16, 185, 129, 20)  // ON (zelena)
+     bot_stopped      ? color.rgb(220, 38, 38, 20)   // OFF (red)
+   : pause_now_paused ? color.rgb(245, 158, 11, 20)  // PAUSED (orange)
+   : pause_now_armed  ? color.rgb(139, 92, 246, 20)  // ARMED (purple)
+                      : color.rgb(16, 185, 129, 20)  // ON (green)
 //text_size=size.normal // slightly smaller font
 
 // --- Fee projection for SELL (taker) ---
@@ -1840,7 +1840,7 @@ plot(use_sl_at_price and in_pos and not na(sl_price_target) ? sl_price_target : 
 plot(use_sl_profit_at_price and in_pos and not na(sl_profit_price_target) ? sl_profit_price_target : na,
      "SL in Profit at Price", color=color.new(color.orange, 0), linewidth=2, style=plot.style_cross)
 
-// Zgornja plast (tvoja dejanska barva; lahko purple/white/teal)
+// Top layer (your actual color; can be purple/white/teal)
 plot(use_trail_tp and in_pos and trail_is_armed ? trail_tp_trigger_price : na,
      "Trail Profit trigger", color=color.new(color.purple, 0), linewidth=6, style=plot.style_linebr)
 
