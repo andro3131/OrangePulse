@@ -55,7 +55,7 @@
     --section-padding: 100px;
 
     /* Typography */
-    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-primary: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
@@ -245,6 +245,7 @@ a:hover {
     max-height: 36px;
     object-fit: contain;
 }
+
 .version {
     color: var(--brand-orange);
     font-size: 0.875rem;
