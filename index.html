@@ -91,6 +91,67 @@
         </div>
     </section>
 
+    <!-- Latest Updates Section -->
+    <section class="updates-section">
+        <div class="container">
+            <div class="updates-header">
+                <span class="updates-badge">✨ Latest Updates</span>
+                <h2 class="section-title">Advanced <span class="gradient-text">Capabilities</span></h2>
+                <p class="section-subtitle">Powerful features that set OrangePulse apart</p>
+            </div>
+
+            <div class="updates-grid">
+                <div class="update-card glass">
+                    <div class="update-icon">⚡</div>
+                    <h3>Manual Mode</h3>
+                    <p><strong>Start when YOU want, not when the market decides.</strong> Activate ultra-fast 1-bar
+                        MicroBreakout at any moment or set a specific price level to trigger automatic entry.</p>
+                    <span class="update-tag">On-Demand Trading</span>
+                </div>
+
+                <div class="update-card glass">
+                    <div class="update-icon">🛡️</div>
+                    <h3>Emergency Safety Orders</h3>
+                    <p>3 additional large orders (MSO) with time-based activation. Your ultimate safety net for black
+                        swan events and extreme drawdowns.</p>
+                    <span class="update-tag">Black Swan Protection</span>
+                </div>
+
+                <div class="update-card glass">
+                    <div class="update-icon">📊</div>
+                    <h3>3-Stage Trailing TP</h3>
+                    <p>Sophisticated trailing system: ARM activates profit protection, BUFFER secures minimum gain,
+                        TRAIL follows peak for maximum upside.</p>
+                    <span class="update-tag">Smart Profit Taking</span>
+                </div>
+
+                <div class="update-card glass">
+                    <div class="update-icon">💎</div>
+                    <h3>TP/SL at Price Levels</h3>
+                    <p>Exit at exact price targets, not just percentages. Set entries and exits at key
+                        support/resistance levels for precision trading.</p>
+                    <span class="update-tag">Price Precision</span>
+                </div>
+
+                <div class="update-card glass">
+                    <div class="update-icon">💰</div>
+                    <h3>Fee Accounting</h3>
+                    <p>Full transparency on all trading costs: Maker fees, Taker fees, and Funding fees. Real-time
+                        tracking in Status Table.</p>
+                    <span class="update-tag">Cost Transparency</span>
+                </div>
+
+                <div class="update-card glass">
+                    <div class="update-icon">🎯</div>
+                    <h3>TP at Last SO</h3>
+                    <p>Preemptive position close instead of final Safety Order. Limits maximum drawdown exposure when
+                        you need it most.</p>
+                    <span class="update-tag">Risk Limiter</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
@@ -127,11 +188,10 @@
                 <div class="feature-card glass">
                     <div class="feature-icon">🎬</div>
                     <h3>Advanced Exit Systems</h3>
-                    <p>Multi-layer profit protection with % TP, price-based TP/SL, 3-stage trailing stop, and Follow TP
+                    <p>Multi-layer profit protection with % TP, price-based TP/SL, and 3-stage trailing stop
                         for maximum gains.</p>
                     <ul class="feature-list">
                         <li>Trailing TP (ARM → BUFFER → TRAIL)</li>
-                        <li>Follow TP (dynamic trailing)</li>
                         <li>TP/SL at exact prices</li>
                         <li>Preemptive TP at Last SO</li>
                     </ul>
@@ -484,8 +544,16 @@
                         <div class="risk-desc">Standard TP from average price</div>
                     </div>
                     <div class="risk-item">
-                        <div class="risk-label">Trailing TP</div>
-                        <div class="risk-desc">3-stage: ARM → BUFFER → TRAIL</div>
+                        <div class="risk-label">3-Stage Trailing TP</div>
+                        <div class="risk-desc">ARM activates, BUFFER protects minimum profit, TRAIL follows peak</div>
+                    </div>
+                    <div class="risk-item">
+                        <div class="risk-label">TP/SL at Price</div>
+                        <div class="risk-desc">Exit at exact price levels (support/resistance)</div>
+                    </div>
+                    <div class="risk-item">
+                        <div class="risk-label">Fee Accounting</div>
+                        <div class="risk-desc">Real-time tracking: Maker/Taker/Funding</div>
                     </div>
                     <div class="risk-item">
                         <div class="risk-label">Stop Loss</div>
@@ -493,7 +561,11 @@
                     </div>
                     <div class="risk-item">
                         <div class="risk-label">TP at Last SO</div>
-                        <div class="risk-desc">Close instead of final SO</div>
+                        <div class="risk-desc">Preemptive close to limit max drawdown</div>
+                    </div>
+                    <div class="risk-item">
+                        <div class="risk-label">Emergency SO (MSO)</div>
+                        <div class="risk-desc">Time-based black swan protection (3 orders)</div>
                     </div>
                 </div>
             </div>
@@ -567,6 +639,65 @@
                         <h4>Trade 24/7</h4>
                         <p>Fully automated execution on your exchange</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <h2 class="section-title">Trading <span class="gradient-text">Tips</span></h2>
+            <p class="section-subtitle">Best practices for successful automated trading</p>
+
+            <div class="tips-grid">
+                <div class="tip-card glass">
+                    <div class="tip-icon">📝</div>
+                    <h3>Start with Paper Trading</h3>
+                    <p>Test your strategies on TradingView's paper trading mode before risking real capital. Backtest
+                        thoroughly to understand performance across different market conditions.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">⚙️</div>
+                    <h3>Use Conservative Settings</h3>
+                    <p>Begin with lower leverage, fewer Safety Orders, and smaller position sizes. Gradually scale up as
+                        you gain confidence and understanding of the bot's behavior.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">🎯</div>
+                    <h3>Start with One Strategy</h3>
+                    <p>Master MeanReversion first (recommended for beginners). Once comfortable, experiment with
+                        TrendPullback, Breakout, or MicroBreakout based on market conditions.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">📊</div>
+                    <h3>Monitor Status Table</h3>
+                    <p>Regularly check the live Status Table to track position health, unrealized PnL, fees, and SO fill
+                        levels. Early awareness prevents surprises.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">🚨</div>
+                    <h3>Set MSO Dates Wisely</h3>
+                    <p>Configure Emergency SO timestamps far in the future (e.g., 2050). Only adjust during active
+                        positions if extreme drawdown protection is needed.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">💰</div>
+                    <h3>Understand Fee Impact</h3>
+                    <p>Trading costs add up quickly. Monitor Maker, Taker, and Funding fees in the Status Table. Fees
+                        reduce your effective profit—factor them into your strategy.</p>
+                </div>
+
+                <div class="tip-card glass">
+                    <div class="tip-icon">🛡️</div>
+                    <h3>Never Risk More Than You Can Afford</h3>
+                    <p>Automated trading is powerful but risky. Only trade with capital you can afford to lose. Set
+                        strict budget limits and stick to your risk management rules.</p>
                 </div>
             </div>
         </div>
