@@ -1,162 +1,69 @@
-# VibeBOT v2.3 - Landing Page
+# VibeBOT v2.3 Landing Page
 
-Professional landing page for VibeBOT v2.3 advanced crypto trading bot.
+🤖 **Premium landing page for VibeBOT v2.3** - Advanced multi-strategy DCA trading bot for cryptocurrency markets.
 
-## 🚀 Quick Start
+## 🎯 Live Demo
 
-Open `index.html` in your browser - that's it! No build process required.
-
-```bash
-# Option 1: Direct open
-open index.html
-
-# Option 2: Local server (recommended)
-python3 -m http.server 8000
-# Then visit: http://localhost:8000
-```
-
-## 📁 Project Structure
-
-```
-OrangePulseBot/
-├── index.html           # Main landing page
-├── styles.css           # Premium dark theme styles
-├── script.js            # Interactive functionality
-├── OrangePulseBot.md    # Pine Script source code
-├── VibeBot v2.3 User Manual.pdf  # Comprehensive user guide
-└── README.md            # This file
-```
+Open `index.html` in your browser or visit: [GitHub Pages](https://andrejmezan.github.io/OrangePulse) *(after enabling)*
 
 ## ✨ Features
 
-- **Premium Dark Design**: Glassmorphism effects, neon accents, smooth gradients
-- **Fully Responsive**: Mobile-first design, works perfectly on all devices
-- **Interactive**: Strategy tabs, FAQ accordion, scroll animations
-- **SEO Optimized**: Meta tags, semantic HTML, fast loading
-- **Accessible**: WCAG AA compliant, keyboard navigation
-- **Zero Dependencies**: Vanilla HTML/CSS/JS - no frameworks needed
+- **Premium Dark Design** with glassmorphism effects
+- **4 Trading Strategies**: MeanReversion, TrendPullback, Breakout, MicroBreakout
+- **Interactive UI**: Strategy tabs, FAQ accordion, scroll animations
+- **Fully Responsive**: Mobile-first design
+- **Zero Dependencies**: Pure HTML/CSS/JS
 
-## 🎨 Design Highlights
+## 📁 Files
 
-- **Color Palette**: Dark theme (#0a0e1a) with accent colors (green #00ff88, orange #ff6b00, purple #8b5cf6)
-- **Typography**: Inter (primary) + JetBrains Mono (code)
-- **Effects**: Glassmorphism, smooth animations, parallax hero
-- **Sections**: 10 main sections from Hero to Footer
-
-## 📄 Sections
-
-1. **Hero** - Impactful headline with animated stats
-2. **Features** - 4 feature cards (Multi-Strategy, DCA, Exits, Tools)
-3. **Strategies** - Interactive tabs for 4 entry modes
-4. **DCA System** - Visual ladder explanation
-5. **Risk Management** - 3-column protection overview
-6. **Integration** - TradingView, WunderTrading, 3Commas
-7. **FAQ** - 8 common questions with accordion
-8. **Contact/CTA** - Newsletter signup + downloads
-9. **Footer** - Links and legal info
-
-## 🛠️ Customization
-
-### Colors
-Edit CSS variables in `styles.css`:
-```css
-:root {
-    --accent-green: #00ff88;
-    --accent-orange: #ff6b00;
-    /* ... */
-}
+```
+├── index.html          # Landing page
+├── styles.css          # Premium dark theme
+├── script.js           # Interactive features
+├── README.md           # Documentation
+├── OrangePulseBot.md   # Pine Script source
+└── VibeBot v2.3 User Manual.pdf  # User guide
 ```
 
-### Content
-All content is in `index.html` - search for section IDs:
-- `#hero` - Hero section
-- `#features` - Features grid
-- `#strategies` - Strategy showcase
-- etc.
+## 🚀 Quick Start
 
-### Links
-Update download links in Contact section:
-```html
-<a href="VibeBot v2.3 User Manual.pdf" download>
-<a href="OrangePulseBot.md" download>
-```
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1024px+
-- **Tablet**: 768px - 1024px
-- **Mobile**: < 768px
-- **Small Mobile**: < 480px
-
-## 🚀 Deployment
-
-### Option 1: GitHub Pages
 ```bash
-# Push to GitHub, enable Pages in Settings
-# Your site will be at: https://username.github.io/OrangePulseBot
+# Clone and open
+git clone https://github.com/andrejmezan/OrangePulse.git
+cd OrangePulse
+open index.html
 ```
 
-### Option 2: Netlify/Vercel
-1. Drag & drop the folder
-2. Auto-deployed in seconds
-3. Free SSL + CDN included
+## 🌐 GitHub Pages Deployment
 
-### Option 3: Traditional Hosting
-Upload all files to your web server via FTP/SFTP.
+1. Go to **Settings** → **Pages**
+2. Source: **Deploy from branch**
+3. Branch: **main** / **root**
+4. Save
+5. Site will be live at: `https://andrejmezan.github.io/OrangePulse`
 
-## 🔧 Browser Support
+## 🛠️ Technology Stack
 
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- HTML5 (semantic structure)
+- CSS3 (custom properties, grid, flexbox)
+- Vanilla JavaScript (ES6+)
+- Google Fonts (Inter, JetBrains Mono)
 
-## 📊 Performance
+## 📊 What is VibeBOT?
 
-- **Lighthouse Score**: 95+ (Performance, SEO, Accessibility)
-- **Page Weight**: < 100KB (HTML+CSS+JS)
-- **Load Time**: < 1s on fast connection
-- **No external dependencies**: Except Google Fonts
+VibeBOT v2.3 is an advanced crypto trading bot featuring:
 
-## 🎯 SEO Checklist
+- **Multi-Strategy Entry**: 4 intelligent entry modes
+- **Smart DCA System**: Base Order + 10 Safety Orders + 3 Emergency SO
+- **Advanced Exits**: TP%, Trailing TP, Follow TP, SL protection
+- **Professional Tools**: Fee accounting, real-time PnL, integrations
 
-- ✅ Meta tags (description, keywords, OG)
-- ✅ Semantic HTML5 structure
-- ✅ Unique H1 per page
-- ✅ Alt text ready (add when images added)
-- ✅ Fast loading
-- ✅ Mobile-friendly
-- ✅ Schema.org markup ready
+Built for TradingView with seamless WunderTrading & 3Commas integration.
 
-## 📝 TODO / Future Enhancements
+## 📝 License
 
-- [ ] Add actual trading chart screenshots
-- [ ] Create logo/favicon
-- [ ] Add video demo section
-- [ ] Implement backend for newsletter (Mailchimp/ConvertKit)
-- [ ] Add testimonials with real user data
-- [ ] Create blog section
-- [ ] Add live TradingView widget
-- [ ] Integrate Telegram/Discord community links
-- [ ] Add CMS (optional - Contentful, Strapi)
-- [ ] Multi-language support (Slovenian)
-
-## 🤝 Contributing
-
-This is a landing page for VibeBOT v2.3. For the actual bot:
-- Pine Script: `OrangePulseBot.md`
-- Manual: `VibeBot v2.3 User Manual.pdf`
-
-## ⚠️ Disclaimer
-
-Trading cryptocurrencies involves substantial risk of loss. VibeBOT is a tool to assist your trading strategy, not financial advice. Always use proper risk management.
-
-## 📧 Contact
-
-Update contact information in the footer and contact section of `index.html`.
+Educational resource - see disclaimer in landing page.
 
 ---
 
-**Version**: 1.0.0  
-**Last Updated**: January 2026  
-**Built with**: ❤️ and Vanilla JS
+**Version**: 1.0.0 | **Built with**: ❤️ & Vanilla JS

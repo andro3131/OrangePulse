@@ -5,35 +5,55 @@
 
 /* === CSS Custom Properties === */
 :root {
-    /* Colors - Dark Theme */
-    --bg-primary: #0a0e1a;
-    --bg-secondary: #121826;
-    --bg-tertiary: #1a2332;
-    
+    /* OrangePulse Brand Colors - Based on Logo */
+    --brand-orange: #F7931A;
+    /* Bitcoin Orange - Primary */
+    --brand-orange-light: #FFA940;
+    /* Lighter orange for hovers */
+    --brand-orange-dark: #E07E0F;
+    /* Darker orange for depth */
+
+    /* Backgrounds - Charcoal Grey Theme */
+    --bg-primary: #2c3338;
+    /* Charcoal */
+    --bg-secondary: #3a4149;
+    /* Logo background grey */
+    --bg-tertiary: #4a5259;
+    /* Lighter grey */
+    --bg-card: #353b42;
+    /* Card background */
+
     /* Accent Colors */
-    --accent-green: #00ff88;
-    --accent-orange: #ff6b00;
-    --accent-purple: #8b5cf6;
-    --accent-blue: #3b82f6;
-    
+    --accent-pulse: #FF6B35;
+    /* Pulse/heartbeat accent */
+    --accent-btc: #F7931A;
+    /* Bitcoin orange */
+    --accent-success: #10B981;
+    /* Success green */
+    --accent-warning: #F59E0B;
+    /* Warning yellow */
+
     /* Text Colors */
-    --text-primary: #ffffff;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
-    
-    /* Glassmorphism */
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-blue) 100%);
-    --gradient-secondary: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-purple) 100%);
-    
+    --text-primary: #FFFFFF;
+    --text-secondary: #D1D5DB;
+    --text-muted: #9CA3AF;
+    --text-dark: #1F2937;
+
+    /* Glassmorphism - Adapted for charcoal */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(247, 147, 26, 0.2);
+    /* Orange tint */
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+    /* Gradients - Orange-centered */
+    --gradient-primary: linear-gradient(135deg, #F7931A 0%, #FFA940 100%);
+    --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931A 100%);
+    --gradient-dark: linear-gradient(180deg, #2c3338 0%, #3a4149 100%);
+
     /* Spacing */
     --container-max: 1200px;
     --section-padding: 100px;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
@@ -60,20 +80,36 @@ body {
 }
 
 ::selection {
-    background: var(--accent-green);
+    background: var(--brand-orange);
     color: var(--bg-primary);
 }
 
 /* === Typography === */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: 1.25rem; }
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
 
 p {
     color: var(--text-secondary);
@@ -81,13 +117,13 @@ p {
 }
 
 a {
-    color: var(--accent-green);
+    color: var(--brand-orange);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: var(--accent-blue);
+    color: var(--brand-orange-light);
 }
 
 /* === Utility Classes === */
@@ -148,7 +184,7 @@ a:hover {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 255, 136, 0.3);
+    box-shadow: 0 8px 24px rgba(247, 147, 26, 0.4);
 }
 
 .btn-secondary {
@@ -158,8 +194,8 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    border-color: var(--accent-green);
-    background: rgba(0, 255, 136, 0.1);
+    border-color: var(--brand-orange);
+    background: rgba(247, 147, 26, 0.1);
 }
 
 .btn-lg {
@@ -201,12 +237,16 @@ a:hover {
     font-weight: 700;
 }
 
-.logo-icon {
-    font-size: 1.75rem;
-}
 
+
+.logo-img {
+    height: 36px;
+    width: auto;
+    max-height: 36px;
+    object-fit: contain;
+}
 .version {
-    color: var(--accent-green);
+    color: var(--brand-orange);
     font-size: 0.875rem;
     font-family: var(--font-mono);
 }
@@ -225,7 +265,7 @@ a:hover {
 }
 
 .nav-link:hover {
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 .hamburger {
@@ -263,16 +303,23 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 30%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+    background:
+        radial-gradient(circle at 20% 30%, rgba(247, 147, 26, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
     animation: float 20s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-20px) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
 }
 
 .hero-container {
@@ -349,17 +396,30 @@ a:hover {
 .scroll-arrow {
     width: 24px;
     height: 24px;
-    border-right: 2px solid var(--accent-green);
-    border-bottom: 2px solid var(--accent-green);
+    border-right: 2px solid var(--brand-orange);
+    border-bottom: 2px solid var(--brand-orange);
     transform: rotate(45deg);
     margin: 0.5rem auto 0;
     animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(45deg); }
-    40% { transform: translateY(-10px) rotate(45deg); }
-    60% { transform: translateY(-5px) rotate(45deg); }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    40% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+
+    60% {
+        transform: translateY(-5px) rotate(45deg);
+    }
 }
 
 @keyframes fadeInUp {
@@ -367,6 +427,7 @@ a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -374,8 +435,13 @@ a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* === Features Section === */
@@ -397,7 +463,7 @@ a:hover {
 
 .feature-card:hover {
     transform: translateY(-8px);
-    border-color: var(--accent-green);
+    border-color: var(--brand-orange);
 }
 
 .feature-icon {
@@ -430,7 +496,7 @@ a:hover {
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--accent-green);
+    color: var(--brand-orange);
     font-weight: 700;
 }
 
@@ -462,8 +528,8 @@ a:hover {
 }
 
 .strategy-tab:hover {
-    border-color: var(--accent-green);
-    background: rgba(0, 255, 136, 0.05);
+    border-color: var(--brand-orange);
+    background: rgba(247, 147, 26, 0.05);
 }
 
 .strategy-tab.active {
@@ -553,7 +619,8 @@ a:hover {
     transform-origin: left center;
 }
 
-.bb-upper, .bb-lower {
+.bb-upper,
+.bb-lower {
     position: absolute;
     width: 80%;
     height: 1px;
@@ -561,16 +628,21 @@ a:hover {
     left: 10%;
 }
 
-.bb-upper { top: 25%; }
-.bb-lower { bottom: 25%; }
+.bb-upper {
+    top: 25%;
+}
+
+.bb-lower {
+    bottom: 25%;
+}
 
 .entry-point {
     position: absolute;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: var(--accent-green);
-    box-shadow: 0 0 12px var(--accent-green);
+    background: var(--brand-orange);
+    box-shadow: 0 0 12px var(--brand-orange);
 }
 
 .entry-point.long {
@@ -604,8 +676,8 @@ a:hover {
     gap: 1rem;
     align-items: center;
     padding: 1rem;
-    background: rgba(0, 255, 136, 0.05);
-    border: 1px solid rgba(0, 255, 136, 0.2);
+    background: rgba(247, 147, 26, 0.05);
+    border: 1px solid rgba(247, 147, 26, 0.2);
     border-radius: 8px;
     margin-bottom: 0.5rem;
 }
@@ -623,7 +695,7 @@ a:hover {
 .step-label {
     font-weight: 700;
     font-family: var(--font-mono);
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 .step-amount {
@@ -697,7 +769,7 @@ a:hover {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent-green);
+    color: var(--brand-orange);
     font-family: var(--font-mono);
 }
 
@@ -718,7 +790,7 @@ a:hover {
 
 .risk-column h3 {
     margin-bottom: 2rem;
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 .risk-item {
@@ -779,11 +851,11 @@ a:hover {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.375rem 0.875rem;
-    background: rgba(0, 255, 136, 0.1);
-    border: 1px solid rgba(0, 255, 136, 0.3);
+    background: rgba(247, 147, 26, 0.1);
+    border: 1px solid rgba(247, 147, 26, 0.3);
     border-radius: 20px;
     font-size: 0.75rem;
-    color: var(--accent-green);
+    color: var(--brand-orange);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -832,7 +904,7 @@ a:hover {
 }
 
 .flow-arrow {
-    color: var(--accent-green);
+    color: var(--brand-orange);
     font-size: 2rem;
     font-weight: 300;
 }
@@ -872,12 +944,12 @@ a:hover {
 }
 
 .faq-question:hover {
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 .faq-icon {
     font-size: 1.5rem;
-    color: var(--accent-green);
+    color: var(--brand-orange);
     transition: transform 0.3s ease;
 }
 
@@ -895,11 +967,14 @@ a:hover {
     max-height: 1000px;
 }
 
-.faq-answer p, .faq-answer ul, .faq-answer ol {
+.faq-answer p,
+.faq-answer ul,
+.faq-answer ol {
     padding: 0 2rem 1.5rem;
 }
 
-.faq-answer ul, .faq-answer ol {
+.faq-answer ul,
+.faq-answer ol {
     padding-left: 4rem;
     color: var(--text-secondary);
 }
@@ -909,7 +984,7 @@ a:hover {
 }
 
 .faq-answer strong {
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 /* === Contact Section === */
@@ -927,7 +1002,7 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.contact-content > p {
+.contact-content>p {
     font-size: 1.25rem;
     margin-bottom: 3rem;
 }
@@ -970,7 +1045,7 @@ a:hover {
 
 .newsletter-form input:focus {
     outline: none;
-    border-color: var(--accent-green);
+    border-color: var(--brand-orange);
 }
 
 .newsletter-form button {
@@ -1042,7 +1117,7 @@ a:hover {
 }
 
 .footer-links a:hover {
-    color: var(--accent-green);
+    color: var(--brand-orange);
 }
 
 .footer-bottom {
@@ -1067,27 +1142,27 @@ a:hover {
     :root {
         --section-padding: 80px;
     }
-    
+
     .strategy-panel {
         grid-template-columns: 1fr;
     }
-    
+
     .dca-content {
         grid-template-columns: 1fr;
     }
-    
+
     .risk-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .integration-flow {
         flex-direction: column;
     }
-    
+
     .flow-arrow {
         transform: rotate(90deg);
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1097,7 +1172,7 @@ a:hover {
     :root {
         --section-padding: 60px;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1110,43 +1185,43 @@ a:hover {
         transition: left 0.3s ease;
         border-bottom: 1px solid var(--glass-border);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hero-cta {
         flex-direction: column;
     }
-    
+
     .hero-stats {
         gap: 2rem;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .strategy-tabs {
         flex-direction: column;
     }
-    
+
     .dca-params {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
@@ -1156,20 +1231,20 @@ a:hover {
     html {
         font-size: 14px;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
-    
+
     .btn {
         width: 100%;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         gap: 1.5rem;
     }
-    
+
     .dca-params {
         grid-template-columns: 1fr;
     }

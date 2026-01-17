@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VibeBOT v2.3 - Advanced multi-strategy DCA trading bot for cryptocurrency markets. Featuring 4 entry strategies, smart risk management, and seamless exchange integration.">
-    <meta name="keywords" content="crypto trading bot, DCA bot, TradingView bot, automated trading, cryptocurrency, bitcoin trading">
+    <meta name="description"
+        content="OrangePulse v2.3 - Advanced multi-strategy DCA trading bot for cryptocurrency markets. Featuring 4 entry strategies, smart risk management, and seamless exchange integration.">
+    <meta name="keywords"
+        content="crypto trading bot, DCA bot, TradingView bot, automated trading, cryptocurrency, bitcoin trading">
     <meta name="author" content="OrangePulseBot">
-    
+
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="VibeBOT v2.3 - Your Ultimate Crypto Trading Assistant">
+    <meta property="og:title" content="OrangePulse v2.3 - Your Ultimate Crypto Trading Assistant">
     <meta property="og:description" content="Multi-strategy DCA bot with advanced risk management for crypto trading">
     <meta property="og:type" content="website">
-    
-    <title>VibeBOT v2.3 - Advanced Crypto Trading Bot | OrangePulseBot</title>
-    
+
+    <title>OrangePulse v2.3 - Advanced Crypto Trading Bot | OrangePulseBot</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-icon">🤖</span>
-                <span class="logo-text">VibeBOT <span class="version">v2.3</span></span>
+                <img src="assets/logo.jpg" alt="OrangePulse Logo" class="logo-img">
+                <span class="logo-text">OrangePulse</span>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#features" class="nav-link">Features</a></li>
@@ -52,11 +58,12 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">VibeBOT v2.3</span>
-                    <br>Your Ultimate Crypto Trading Assistant
+                    <span class="gradient-text">OrangePulse</span>
+                    <br>Advanced Multi-Strategy DCA Trading Bot
                 </h1>
                 <p class="hero-subtitle">
-                    Multi-strategy DCA bot with advanced risk management, 4 intelligent entry modes, and professional-grade exit systems. Built for TradingView + seamless exchange integration.
+                    Bitcoin-powered automated trading with intelligent DCA system, 4 entry strategies, and professional
+                    risk management. Built for TradingView with seamless exchange integration.
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary btn-lg">Get Started Free</a>
@@ -89,12 +96,13 @@
         <div class="container">
             <h2 class="section-title">Powerful <span class="gradient-text">Features</span></h2>
             <p class="section-subtitle">Everything you need for professional crypto trading automation</p>
-            
+
             <div class="features-grid">
                 <div class="feature-card glass">
                     <div class="feature-icon">🎯</div>
                     <h3>Multi-Strategy Entry</h3>
-                    <p>Choose from 4 battle-tested strategies: MeanReversion, TrendPullback, Breakout, and MicroBreakout. Each optimized for different market conditions.</p>
+                    <p>Choose from 4 battle-tested strategies: MeanReversion, TrendPullback, Breakout, and
+                        MicroBreakout. Each optimized for different market conditions.</p>
                     <ul class="feature-list">
                         <li>Bollinger Bands + RSI</li>
                         <li>Moving Averages + MACD</li>
@@ -106,7 +114,8 @@
                 <div class="feature-card glass">
                     <div class="feature-icon">💰</div>
                     <h3>Smart DCA System</h3>
-                    <p>Advanced Dollar Cost Averaging with configurable Base Order, up to 10 Safety Orders, and 3 Emergency Safety Orders for extreme drawdowns.</p>
+                    <p>Advanced Dollar Cost Averaging with configurable Base Order, up to 10 Safety Orders, and 3
+                        Emergency Safety Orders for extreme drawdowns.</p>
                     <ul class="feature-list">
                         <li>Volume Scale (1.55x default)</li>
                         <li>Step Scale (1.05x default)</li>
@@ -118,7 +127,8 @@
                 <div class="feature-card glass">
                     <div class="feature-icon">🎬</div>
                     <h3>Advanced Exit Systems</h3>
-                    <p>Multi-layer profit protection with % TP, price-based TP/SL, 3-stage trailing stop, and Follow TP for maximum gains.</p>
+                    <p>Multi-layer profit protection with % TP, price-based TP/SL, 3-stage trailing stop, and Follow TP
+                        for maximum gains.</p>
                     <ul class="feature-list">
                         <li>Trailing TP (ARM → BUFFER → TRAIL)</li>
                         <li>Follow TP (dynamic trailing)</li>
@@ -130,7 +140,8 @@
                 <div class="feature-card glass">
                     <div class="feature-icon">🔧</div>
                     <h3>Professional Tools</h3>
-                    <p>Complete control with pause/resume, cooldown systems, fee accounting, real-time PnL tracking, and seamless integrations.</p>
+                    <p>Complete control with pause/resume, cooldown systems, fee accounting, real-time PnL tracking, and
+                        seamless integrations.</p>
                     <ul class="feature-list">
                         <li>WunderTrading integration</li>
                         <li>3Commas DCA bots</li>
@@ -147,7 +158,7 @@
         <div class="container">
             <h2 class="section-title">Trading <span class="gradient-text">Strategies</span></h2>
             <p class="section-subtitle">4 intelligent entry modes for every market condition</p>
-            
+
             <div class="strategy-tabs">
                 <button class="strategy-tab active" data-strategy="meanreversion">
                     <span class="tab-icon">📊</span>
@@ -172,7 +183,8 @@
                     <div class="strategy-info">
                         <h3>MeanReversion Strategy</h3>
                         <p class="strategy-description">
-                            Enter when price touches Bollinger Bands extremes with RSI confirmation. Perfect for range-bound markets and oversold/overbought conditions.
+                            Enter when price touches Bollinger Bands extremes with RSI confirmation. Perfect for
+                            range-bound markets and oversold/overbought conditions.
                         </p>
                         <div class="strategy-params">
                             <div class="param">
@@ -207,7 +219,8 @@
                     <div class="strategy-info">
                         <h3>TrendPullback Strategy</h3>
                         <p class="strategy-description">
-                            Catch pullbacks in strong trends using dual moving averages and MACD confirmation. Ideal for trending markets with healthy corrections.
+                            Catch pullbacks in strong trends using dual moving averages and MACD confirmation. Ideal for
+                            trending markets with healthy corrections.
                         </p>
                         <div class="strategy-params">
                             <div class="param">
@@ -242,7 +255,8 @@
                     <div class="strategy-info">
                         <h3>Breakout Strategy</h3>
                         <p class="strategy-description">
-                            Enter on range breakouts with volume confirmation and squeeze filter. Perfect for capturing explosive moves after consolidation.
+                            Enter on range breakouts with volume confirmation and squeeze filter. Perfect for capturing
+                            explosive moves after consolidation.
                         </p>
                         <div class="strategy-params">
                             <div class="param">
@@ -277,7 +291,8 @@
                     <div class="strategy-info">
                         <h3>MicroBreakout Strategy</h3>
                         <p class="strategy-description">
-                            Ultra-fast entries on Donchian Channel breakouts. Manual mode uses 1-bar lookback for instant execution on price levels.
+                            Ultra-fast entries on Donchian Channel breakouts. Manual mode uses 1-bar lookback for
+                            instant execution on price levels.
                         </p>
                         <div class="strategy-params">
                             <div class="param">
@@ -316,7 +331,7 @@
         <div class="container">
             <h2 class="section-title">Smart <span class="gradient-text">DCA System</span></h2>
             <p class="section-subtitle">Intelligent position averaging that adapts to market conditions</p>
-            
+
             <div class="dca-content">
                 <div class="dca-visual">
                     <div class="dca-ladder">
@@ -371,21 +386,24 @@
                         <div class="dca-icon">📉</div>
                         <div>
                             <h4>Safety Orders (SO)</h4>
-                            <p>Up to 10 orders that trigger at increasing price deviations. Each SO is larger (Volume Scale 1.55x) and further away (Step Scale 1.05x).</p>
+                            <p>Up to 10 orders that trigger at increasing price deviations. Each SO is larger (Volume
+                                Scale 1.55x) and further away (Step Scale 1.05x).</p>
                         </div>
                     </div>
                     <div class="dca-feature">
                         <div class="dca-icon">🚨</div>
                         <div>
                             <h4>Emergency SO (MSO)</h4>
-                            <p>3 additional large orders activated by time condition. Your safety net for black swan events.</p>
+                            <p>3 additional large orders activated by time condition. Your safety net for black swan
+                                events.</p>
                         </div>
                     </div>
                     <div class="dca-feature">
                         <div class="dca-icon">📊</div>
                         <div>
                             <h4>Average Price</h4>
-                            <p>Automatically recalculated after each fill. TP target moves to maintain your profit percentage.</p>
+                            <p>Automatically recalculated after each fill. TP target moves to maintain your profit
+                                percentage.</p>
                         </div>
                     </div>
                 </div>
@@ -417,7 +435,7 @@
         <div class="container">
             <h2 class="section-title">Multi-Layer <span class="gradient-text">Risk Management</span></h2>
             <p class="section-subtitle">Professional-grade protection at every stage</p>
-            
+
             <div class="risk-grid">
                 <div class="risk-column glass">
                     <h3>Entry Control</h3>
@@ -487,7 +505,7 @@
         <div class="container">
             <h2 class="section-title">Seamless <span class="gradient-text">Integration</span></h2>
             <p class="section-subtitle">Connect with your favorite platforms and exchanges</p>
-            
+
             <div class="integration-grid">
                 <div class="integration-card glass">
                     <div class="integration-logo">📈</div>
@@ -558,7 +576,7 @@
     <section class="faq-section" id="faq">
         <div class="container">
             <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-            
+
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-question">
@@ -566,7 +584,11 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>The DCA (Dollar Cost Averaging) system starts with a Base Order (BO) when your chosen strategy triggers. If the price moves against you, Safety Orders (SO) automatically place additional buys/sells at calculated levels. Each SO is larger than the previous (Volume Scale 1.55x) and placed further away (Step Scale 1.05x). This lowers your average entry price, allowing you to exit at profit even if the initial entry wasn't perfect.</p>
+                        <p>The DCA (Dollar Cost Averaging) system starts with a Base Order (BO) when your chosen
+                            strategy triggers. If the price moves against you, Safety Orders (SO) automatically place
+                            additional buys/sells at calculated levels. Each SO is larger than the previous (Volume
+                            Scale 1.55x) and placed further away (Step Scale 1.05x). This lowers your average entry
+                            price, allowing you to exit at profit even if the initial entry wasn't perfect.</p>
                     </div>
                 </div>
 
@@ -577,10 +599,12 @@
                     </button>
                     <div class="faq-answer">
                         <p><strong>MeanReversion:</strong> Best for ranging markets and volatility spikes.<br>
-                        <strong>TrendPullback:</strong> Ideal for strong trends with healthy pullbacks.<br>
-                        <strong>Breakout:</strong> Perfect for consolidation breaks and explosive moves.<br>
-                        <strong>MicroBreakout:</strong> Great for scalping and precise price level entries.<br><br>
-                        Start by backtesting each on your target asset to see which performs best in current conditions.</p>
+                            <strong>TrendPullback:</strong> Ideal for strong trends with healthy pullbacks.<br>
+                            <strong>Breakout:</strong> Perfect for consolidation breaks and explosive moves.<br>
+                            <strong>MicroBreakout:</strong> Great for scalping and precise price level entries.<br><br>
+                            Start by backtesting each on your target asset to see which performs best in current
+                            conditions.
+                        </p>
                     </div>
                 </div>
 
@@ -590,7 +614,8 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>VibeBOT is powerful but requires understanding of trading concepts like DCA, risk management, and technical indicators. We recommend:</p>
+                        <p>OrangePulse is powerful but requires understanding of trading concepts like DCA, risk
+                            management, and technical indicators. We recommend:</p>
                         <ul>
                             <li>Starting with paper trading on TradingView</li>
                             <li>Reading the comprehensive manual (PDF included)</li>
@@ -607,7 +632,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>VibeBOT runs on TradingView and sends alerts to either WunderTrading or 3Commas:</p>
+                        <p>OrangePulse runs on TradingView and sends alerts to either WunderTrading or 3Commas:</p>
                         <ol>
                             <li>Add the bot script to your TradingView chart</li>
                             <li>Configure your preferred integration (WT or 3C) in the bot settings</li>
@@ -615,7 +640,8 @@
                             <li>Connect WunderTrading/3Commas to your exchange via API</li>
                             <li>The bot will automatically execute trades via alerts</li>
                         </ol>
-                        <p>No direct API keys in TradingView - all execution happens through secure intermediary platforms.</p>
+                        <p>No direct API keys in TradingView - all execution happens through secure intermediary
+                            platforms.</p>
                     </div>
                 </div>
 
@@ -625,14 +651,16 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>MSO (Emergency SO) are 3 additional large orders that activate based on time conditions, not price. They're your safety net for extreme drawdowns:</p>
+                        <p>MSO (Emergency SO) are 3 additional large orders that activate based on time conditions, not
+                            price. They're your safety net for extreme drawdowns:</p>
                         <ul>
                             <li>Trigger only after all normal SOs are filled</li>
                             <li>Customizable USD amounts ($10k/$20k/$30k default)</li>
                             <li>Time-based activation (you set future timestamps)</li>
                             <li>Designed for black swan events or extended drawdowns</li>
                         </ul>
-                        <p>Most traders set these to dates far in the future and only reduce the timestamp if needed during a position.</p>
+                        <p>Most traders set these to dates far in the future and only reduce the timestamp if needed
+                            during a position.</p>
                     </div>
                 </div>
 
@@ -644,11 +672,15 @@
                     <div class="faq-answer">
                         <p>The 3-stage Trailing TP system maximizes profits in trending moves:</p>
                         <ol>
-                            <li><strong>ARM (Activation):</strong> Activates when price reaches your threshold (e.g., +1% profit)</li>
-                            <li><strong>BUFFER:</strong> Protects downside - exits if price drops below ARM minus buffer (e.g., +0.8%)</li>
-                            <li><strong>TRAILING:</strong> Activates after price rises further - trails behind the peak by your trail % (e.g., -0.5% from highest)</li>
+                            <li><strong>ARM (Activation):</strong> Activates when price reaches your threshold (e.g.,
+                                +1% profit)</li>
+                            <li><strong>BUFFER:</strong> Protects downside - exits if price drops below ARM minus buffer
+                                (e.g., +0.8%)</li>
+                            <li><strong>TRAILING:</strong> Activates after price rises further - trails behind the peak
+                                by your trail % (e.g., -0.5% from highest)</li>
                         </ol>
-                        <p>This ensures you lock in minimum profit (buffer zone) while capturing extended moves (trailing zone).</p>
+                        <p>This ensures you lock in minimum profit (buffer zone) while capturing extended moves
+                            (trailing zone).</p>
                     </div>
                 </div>
 
@@ -658,7 +690,8 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! Simply select "LONG" or "SHORT" in the Direction setting. All strategies, DCA mechanics, and exit systems work symmetrically for both directions:</p>
+                        <p>Yes! Simply select "LONG" or "SHORT" in the Direction setting. All strategies, DCA mechanics,
+                            and exit systems work symmetrically for both directions:</p>
                         <ul>
                             <li><strong>LONG:</strong> Buy low, sell high - SOs trigger below entry</li>
                             <li><strong>SHORT:</strong> Sell high, buy low - SOs trigger above entry</li>
@@ -673,13 +706,14 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>VibeBOT tracks all trading costs for accurate PnL:</p>
+                        <p>OrangePulse tracks all trading costs for accurate PnL:</p>
                         <ul>
                             <li><strong>Maker Fees:</strong> For limit orders (0.02% default)</li>
                             <li><strong>Taker Fees:</strong> For market orders - BO/SO (0.05% default)</li>
                             <li><strong>Funding Fees:</strong> Perpetuals funding rate per 8h (0.01% default)</li>
                         </ul>
-                        <p>All fees are cumulative and subtracted from unrealized PnL in real-time. The status table shows total fees: Buy / Funding / Sell (projected).</p>
+                        <p>All fees are cumulative and subtracted from unrealized PnL in real-time. The status table
+                            shows total fees: Buy / Funding / Sell (projected).</p>
                     </div>
                 </div>
             </div>
@@ -691,12 +725,13 @@
         <div class="container">
             <div class="contact-content glass">
                 <h2>Ready to Get Started?</h2>
-                <p>Download VibeBOT v2.3 and take your crypto trading to the next level</p>
-                
+                <p>Download OrangePulse v2.3 and take your crypto trading to the next level</p>
+
                 <div class="contact-grid">
                     <div class="contact-option">
                         <h3>📄 User Manual</h3>
-                        <p>Comprehensive guide with setup instructions, strategy explanations, and optimization tips.</p>
+                        <p>Comprehensive guide with setup instructions, strategy explanations, and optimization tips.
+                        </p>
                         <a href="VibeBot v2.3 User Manual.pdf" download class="btn btn-secondary">Download PDF</a>
                     </div>
 
@@ -717,7 +752,10 @@
                 </div>
 
                 <div class="disclaimer">
-                    <p><strong>⚠️ Risk Disclaimer:</strong> Trading cryptocurrencies involves substantial risk of loss. VibeBOT is a tool to assist your trading strategy, not financial advice. Always use proper risk management, trade with capital you can afford to lose, and backtest thoroughly before live trading. Past performance does not guarantee future results.</p>
+                    <p><strong>⚠️ Risk Disclaimer:</strong> Trading cryptocurrencies involves substantial risk of loss.
+                        OrangePulse is a tool to assist your trading strategy, not financial advice. Always use proper
+                        risk management, trade with capital you can afford to lose, and backtest thoroughly before live
+                        trading. Past performance does not guarantee future results.</p>
                 </div>
             </div>
         </div>
@@ -729,10 +767,11 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <span class="logo-icon">🤖</span>
-                        <span class="logo-text">VibeBOT <span class="version">v2.3</span></span>
+                        <img src="assets/logo.jpg" alt="OrangePulse Logo" class="logo-img">
+                        <span class="logo-text">OrangePulse <span class="version">v2.3</span></span>
                     </div>
-                    <p class="footer-desc">Advanced multi-strategy DCA bot for professional crypto trading automation.</p>
+                    <p class="footer-desc">Advanced multi-strategy DCA bot for professional crypto trading automation.
+                    </p>
                 </div>
 
                 <div class="footer-col">
@@ -774,4 +813,5 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
