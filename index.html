@@ -103,76 +103,40 @@
             <div class="features-grid">
                 <div class="feature-card glass">
                     <div class="feature-icon">🎯</div>
-                    <h3>4 Battle-Tested Entry Strategies</h3>
-                    <p>Choose the perfect strategy for current market conditions. Each optimized for specific scenarios.
-                    </p>
+                    <h3>Entry Systems & Manual Control</h3>
+                    <p>4 battle-tested strategies plus on-demand manual entry. Start when YOU want or let the algorithms
+                        decide.</p>
                     <ul class="feature-list">
-                        <li>MeanReversion (BB+RSI oversold/overbought)</li>
-                        <li>TrendPullback (EMA200 + MACD confirmation)</li>
-                        <li>Breakout (Range + Volume + Squeeze filters)</li>
-                        <li>MicroBreakout (Donchian ultra-fast entries)</li>
-                    </ul>
-                </div>
-
-                <div class="feature-card glass">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Manual Mode & Start at Price</h3>
-                    <p><strong>Start when YOU want, not when the market decides.</strong> Ultra-fast 1-bar MicroBreakout
-                        on-demand or price-triggered activation.</p>
-                    <ul class="feature-list">
-                        <li>Instant manual entry override</li>
-                        <li>Price-level triggered activation</li>
+                        <li>MeanReversion, TrendPullback, Breakout, MicroBreakout</li>
+                        <li>Manual Mode: instant 1-bar entry override</li>
+                        <li>Start at Price: trigger activation at specific level</li>
                         <li>Auto-disarm after first TP</li>
                     </ul>
                 </div>
 
                 <div class="feature-card glass">
                     <div class="feature-icon">💰</div>
-                    <h3>Smart DCA System</h3>
-                    <p>Advanced Dollar Cost Averaging with configurable Safety Orders and dynamic ladder re-anchoring.
+                    <h3>Smart DCA & Emergency Protection</h3>
+                    <p>Advanced averaging system with up to 10 Safety Orders plus 3 Emergency MSO for black swan events.
                     </p>
                     <ul class="feature-list">
-                        <li>Up to 10 Safety Orders</li>
-                        <li>Volume Scale & Step Scale control</li>
-                        <li>Price Deviation configuration</li>
-                        <li>Dynamic re-anchoring after fills</li>
-                    </ul>
-                </div>
-
-                <div class="feature-card glass">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Emergency Safety Orders (MSO)</h3>
-                    <p>3 additional large orders with time-based activation. Your ultimate safety net for black swan
-                        events and extreme drawdowns.</p>
-                    <ul class="feature-list">
-                        <li>Time-triggered activation</li>
-                        <li>Configurable USD amounts</li>
-                        <li>Activate after standard SO exhaustion</li>
+                        <li>Volume Scale & Step Scale configuration</li>
+                        <li>Dynamic ladder re-anchoring after fills</li>
+                        <li>Emergency SO: time-triggered black swan protection</li>
+                        <li>Budget-aware fills, never exceeds capital</li>
                     </ul>
                 </div>
 
                 <div class="feature-card glass">
                     <div class="feature-icon">📊</div>
-                    <h3>3-Stage Trailing TP</h3>
-                    <p>Sophisticated trailing system: ARM activates, BUFFER protects minimum profit, TRAIL follows peak
-                        for maximum gains.</p>
+                    <h3>Advanced Exit Systems</h3>
+                    <p>Multi-layer profit protection: 3-stage trailing, price-level exits, and preemptive TP at Last SO.
+                    </p>
                     <ul class="feature-list">
-                        <li>ARM: Activation threshold</li>
-                        <li>BUFFER: Minimum profit protection</li>
-                        <li>TRAIL: Follow peak from activation + trail %</li>
-                    </ul>
-                </div>
-
-                <div class="feature-card glass">
-                    <div class="feature-icon">💎</div>
-                    <h3>Precision Exit Controls</h3>
-                    <p>Exit at exact price levels (support/resistance) or preemptively close before final SO. Full
-                        control over your exit strategy.</p>
-                    <ul class="feature-list">
-                        <li>TP/SL at exact price targets (not just %)</li>
-                        <li>TP at Last SO (close before final averaging)</li>
-                        <li>Support/resistance integration</li>
-                        <li>Cap maximum position size & exposure</li>
+                        <li>3-Stage Trailing: ARM → BUFFER → TRAIL</li>
+                        <li>TP/SL at exact price levels (support/resistance)</li>
+                        <li>TP at Last SO: close before final averaging</li>
+                        <li>Manual SL in Profit lock gains mid-trade</li>
                     </ul>
                 </div>
 
@@ -182,23 +146,36 @@
                     <p>Seamless automation with WunderTrading and 3Commas. JSON alerts with exact USD amounts for
                         perfect execution.</p>
                     <ul class="feature-list">
-                        <li>WunderTrading JSON signals</li>
-                        <li>3Commas DCA bot integration</li>
+                        <li>WunderTrading JSON signals (BO/SO/Exit)</li>
+                        <li>3Commas DCA bot integration (add_funds, close)</li>
                         <li>One alert per bar (priority: EXIT > SO > BO)</li>
+                        <li>Exact USD amounts in every signal</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card glass">
+                    <div class="feature-icon">💵</div>
+                    <h3>Fee Transparency & True PnL</h3>
+                    <p>Full cost accounting with real-time tracking of Maker, Taker, and Funding fees for accurate
+                        profitability.</p>
+                    <ul class="feature-list">
+                        <li>Real-time Maker/Taker fee tracking</li>
+                        <li>Funding fee accumulation (per 8h)</li>
+                        <li>True PnL calculation (post-fees)</li>
+                        <li>Fee breakdown in Status Table</li>
                     </ul>
                 </div>
 
                 <div class="feature-card glass">
                     <div class="feature-icon">🔧</div>
-                    <h3>Professional Controls & Fee Transparency</h3>
-                    <p>Complete bot management with real-time fee accounting. Track all costs (Maker/Taker/Funding) and
-                        control bot behavior with precision.</p>
+                    <h3>Professional Bot Controls</h3>
+                    <p>Complete management dashboard with pause/stop, cooldown systems, and live Status Table showing 15
+                        key metrics.</p>
                     <ul class="feature-list">
-                        <li>Real-time fee tracking (Maker/Taker/Funding)</li>
-                        <li>True PnL calculation (post-fees)</li>
                         <li>Pause/Stop/Resume functionality</li>
                         <li>Cooldown systems (BO/SO/Exit)</li>
-                        <li>Live Status Table (15 metrics)</li>
+                        <li>Live Status Table (AVG, PnL, SO progress, fees)</li>
+                        <li>Visual status indicators (DISARMED/BUFFER/TRAILING)</li>
                     </ul>
                 </div>
             </div>
