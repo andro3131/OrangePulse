@@ -957,12 +957,14 @@ a:hover {
 
 .risk-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    align-items: start;
 }
 
 .risk-column {
     padding: 2rem;
+    width: 100%;
 }
 
 .risk-column h3 {
@@ -999,7 +1001,7 @@ a:hover {
 
 .tips-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
