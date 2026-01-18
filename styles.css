@@ -328,19 +328,9 @@ a:hover {
     overflow: hidden;
 }
 
+/* Hero background removed - using global body::before background instead */
 .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('hero-bg-full.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: 0;
-    animation: bgZoom 20s ease-in-out infinite;
+    display: none;
 }
 
 @keyframes bgZoom {
