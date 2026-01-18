@@ -310,6 +310,19 @@ a:hover {
     background-repeat: no-repeat;
     opacity: 0.3;
     z-index: 0;
+    animation: bgZoom 20s ease-in-out infinite;
+}
+
+@keyframes bgZoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 @keyframes heroZoom {
@@ -342,9 +355,8 @@ a:hover {
 }
 
 .hero-split {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     min-height: 600px;
     max-width: var(--container-max);
@@ -354,7 +366,7 @@ a:hover {
 
 .hero-content {
     text-align: left;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .hero-title {
