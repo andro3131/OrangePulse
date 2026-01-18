@@ -1401,9 +1401,13 @@ a:hover {
 }
 
 .contact-option {
+    flex: 1;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
 }
 
 .contact-option h3 {
