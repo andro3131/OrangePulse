@@ -77,36 +77,6 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    position: relative;
-}
-
-/* Global Background */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('assets/site-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: -1;
-    animation: globalBgZoom 20s ease-in-out infinite;
-}
-
-@keyframes globalBgZoom {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
 }
 
 ::selection {
@@ -328,9 +298,19 @@ a:hover {
     overflow: hidden;
 }
 
-/* Hero background removed - using global body::before background instead */
 .hero-bg {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/site-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+    animation: bgZoom 20s ease-in-out infinite;
 }
 
 @keyframes bgZoom {
@@ -542,7 +522,7 @@ a:hover {
 /* === Features Section === */
 .features {
     padding: var(--section-padding) 0;
-    background: rgba(58, 65, 73, 0.85);
+    background: var(--bg-secondary);
 }
 
 .features-grid {
@@ -760,7 +740,7 @@ a:hover {
 /* === DCA Section === */
 .dca-section {
     padding: var(--section-padding) 0;
-    background: rgba(58, 65, 73, 0.85);
+    background: var(--bg-secondary);
 }
 
 .dca-content {
@@ -924,7 +904,7 @@ a:hover {
 /* === Trading Tips Section === */
 .tips-section {
     padding: var(--section-padding) 0;
-    background: rgba(58, 65, 73, 0.85);
+    background: var(--bg-secondary);
 }
 
 .tips-grid {
@@ -965,7 +945,7 @@ a:hover {
 /* === Integration Section === */
 .integration-section {
     padding: var(--section-padding) 0;
-    background: rgba(58, 65, 73, 0.85);
+    background: var(--bg-secondary);
 }
 
 .integration-grid {
@@ -1138,7 +1118,7 @@ a:hover {
 /* === Contact Section === */
 .contact-section {
     padding: var(--section-padding) 0;
-    background: rgba(58, 65, 73, 0.85);
+    background: var(--bg-secondary);
 }
 
 .contact-content {
