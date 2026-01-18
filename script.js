@@ -335,22 +335,9 @@ function highlightNavigation() {
 
 window.addEventListener('scroll', highlightNavigation);
 
-// === Pricing Section - Stripe Integration Placeholder ===
-const pricingButtons = document.querySelectorAll('.pricing-cta');
-
-pricingButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        const plan = button.getAttribute('data-plan');
-
-        // TODO: Replace this with actual Stripe Checkout redirect
-        // When you activate Stripe, you'll replace this with:
-        // window.location.href = stripe.createCheckoutSession(plan);
-
-        console.log(`Selected plan: ${plan}`);
-        alert(`🚀 ${plan.toUpperCase()} Plan Selected!\n\nThis will redirect to Stripe checkout once you activate your Stripe account.\n\nNext steps:\n1. Activate Stripe\n2. Create products for Monthly ($99) and Lifetime ($599)\n3. Add Stripe publishable key\n4. Update this button to redirect to checkout`);
-    });
-});
+// === Pricing Section - Stripe Integration ===
+// Let the default href behavior handle Stripe redirects
+// No JavaScript needed here - links work natively
 
 // === Console Easter Egg ===
 console.log('%c🤖 VibeBOT v2.3', 'font-size: 20px; font-weight: bold; color: #00ff88;');
