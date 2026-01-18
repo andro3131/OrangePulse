@@ -42,10 +42,10 @@ strategyTabs.forEach(tab => {
         // Remove active class from all tabs and panels
         strategyTabs.forEach(t => t.classList.remove('active'));
         strategyPanels.forEach(p => p.classList.remove('active'));
-        
+
         // Add active class to clicked tab
         tab.classList.add('active');
-        
+
         // Show corresponding panel
         const strategyId = tab.getAttribute('data-strategy');
         const panel = document.getElementById(strategyId);
@@ -60,7 +60,7 @@ const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
-    
+
     question.addEventListener('click', () => {
         // Close all other items
         faqItems.forEach(otherItem => {
@@ -68,7 +68,7 @@ faqItems.forEach(item => {
                 otherItem.classList.remove('active');
             }
         });
-        
+
         // Toggle current item
         item.classList.toggle('active');
     });
@@ -80,10 +80,10 @@ const newsletterForm = document.getElementById('newsletterForm');
 if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const emailInput = newsletterForm.querySelector('input[type="email"]');
         const email = emailInput.value;
-        
+
         // Simple validation
         if (email && validateEmail(email)) {
             // Here you would normally send to a backend/service
@@ -105,15 +105,15 @@ function validateEmail(email) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             const navHeight = navbar.offsetHeight;
             const targetPosition = targetElement.offsetTop - navHeight - 20;
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
@@ -174,20 +174,20 @@ function animateCounter(element, target) {
     // Extract number from string (e.g., "10+" -> 10)
     const hasPlus = target.includes('+');
     const hasDivision = target.includes('/');
-    
+
     if (hasDivision) {
         // For "24/7" type stats, just display as is
         return;
     }
-    
+
     const numValue = parseInt(target);
     if (isNaN(numValue)) return;
-    
+
     const duration = 2000; // 2 seconds
     const steps = 60;
     const increment = numValue / steps;
     let current = 0;
-    
+
     const timer = setInterval(() => {
         current += increment;
         if (current >= numValue) {
@@ -212,7 +212,7 @@ window.addEventListener('scroll', () => {
 function animateChart(chartElement) {
     const chartLine = chartElement.querySelector('.chart-line');
     if (!chartLine) return;
-    
+
     // Animate chart line drawing
     chartLine.style.animation = 'drawLine 1.5s ease-out forwards';
 }
@@ -268,7 +268,7 @@ glassCards.forEach(card => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         card.style.setProperty('--mouse-x', `${x}px`);
         card.style.setProperty('--mouse-y', `${y}px`);
     });
@@ -316,12 +316,12 @@ const sections = document.querySelectorAll('section[id]');
 
 function highlightNavigation() {
     const scrollY = window.scrollY;
-    
+
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - navbar.offsetHeight - 50;
         const sectionId = section.getAttribute('id');
-        
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
@@ -334,6 +334,23 @@ function highlightNavigation() {
 }
 
 window.addEventListener('scroll', highlightNavigation);
+
+// === Pricing Section - Stripe Integration Placeholder ===
+const pricingButtons = document.querySelectorAll('.pricing-cta');
+
+pricingButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const plan = button.getAttribute('data-plan');
+
+        // TODO: Replace this with actual Stripe Checkout redirect
+        // When you activate Stripe, you'll replace this with:
+        // window.location.href = stripe.createCheckoutSession(plan);
+
+        console.log(`Selected plan: ${plan}`);
+        alert(`🚀 ${plan.toUpperCase()} Plan Selected!\n\nThis will redirect to Stripe checkout once you activate your Stripe account.\n\nNext steps:\n1. Activate Stripe\n2. Create products for Monthly ($99) and Lifetime ($599)\n3. Add Stripe publishable key\n4. Update this button to redirect to checkout`);
+    });
+});
 
 // === Console Easter Egg ===
 console.log('%c🤖 VibeBOT v2.3', 'font-size: 20px; font-weight: bold; color: #00ff88;');
