@@ -542,7 +542,7 @@ a:hover {
 /* === Features Section === */
 .features {
     padding: var(--section-padding) 0;
-    background: var(--bg-secondary);
+    background: rgba(58, 65, 73, 0.85);
 }
 
 .features-grid {
@@ -760,7 +760,7 @@ a:hover {
 /* === DCA Section === */
 .dca-section {
     padding: var(--section-padding) 0;
-    background: var(--bg-secondary);
+    background: rgba(58, 65, 73, 0.85);
 }
 
 .dca-content {
@@ -924,7 +924,7 @@ a:hover {
 /* === Trading Tips Section === */
 .tips-section {
     padding: var(--section-padding) 0;
-    background: var(--bg-secondary);
+    background: rgba(58, 65, 73, 0.85);
 }
 
 .tips-grid {
@@ -965,7 +965,7 @@ a:hover {
 /* === Integration Section === */
 .integration-section {
     padding: var(--section-padding) 0;
-    background: var(--bg-secondary);
+    background: rgba(58, 65, 73, 0.85);
 }
 
 .integration-grid {
@@ -1138,7 +1138,7 @@ a:hover {
 /* === Contact Section === */
 .contact-section {
     padding: var(--section-padding) 0;
-    background: var(--bg-secondary);
+    background: rgba(58, 65, 73, 0.85);
 }
 
 .contact-content {
