@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for subscribing to OrangePulse - Your crypto trading bot">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Thank You - OrangePulse</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(10, 14, 26, 0.95) 0%, rgba(20, 28, 52, 0.95) 100%);
+        }
+
+        .thank-you-content {
+            max-width: 700px;
+            padding: 4rem 3rem;
+            text-align: center;
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .thank-you-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00ff88, #00d4ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .success-message {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .next-steps {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .next-steps h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--brand-orange);
+        }
+
+        .next-steps ol {
+            list-style: none;
+            counter-reset: step-counter;
+            padding: 0;
+        }
+
+        .next-steps li {
+            counter-increment: step-counter;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--brand-orange);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .next-steps li:last-child {
+            margin-bottom: 0;
+        }
+
+        .next-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: var(--bg-primary);
+        }
+
+        .next-steps strong {
+            color: var(--brand-orange);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .support-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .support-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .support-box a {
+            color: var(--accent-success);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .support-box a:hover {
+            color: var(--brand-orange);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 3rem 2rem;
+            }
+
+            .thank-you-content h1 {
+                font-size: 2rem;
+            }
+
+            .next-steps {
+                padding: 2rem 1.5rem;
+            }
+
+            .next-steps li::before {
+                left: -1rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation (minimal) -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="OrangePulse Logo" class="logo-img">
+                <span class="logo-text"><span class="orange-part">Orange</span><span
+                        class="pulse-part">Pulse</span></span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="thank-you-content glass">
+            <div class="success-icon">🎉</div>
+            <h1>Welcome to OrangePulse!</h1>
+            <p class="success-message">Your subscription is confirmed. Let's get you started!</p>
+
+            <div class="next-steps">
+                <h2>📋 What Happens Next?</h2>
+                <ol>
+                    <li>
+                        <strong>Check your email (within 5 minutes)</strong>
+                        You'll receive a welcome email with the complete User Manual attached as PDF.
+                    </li>
+                    <li>
+                        <strong>Reply with your TradingView username</strong>
+                        We'll send you a script invite to access OrangePulse on TradingView. This usually takes 24-48
+                        hours.
+                    </li>
+                    <li>
+                        <strong>Start trading!</strong>
+                        Follow the setup instructions in the manual (Chapter 1-4) to configure your bot and start
+                        automated trading.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="support-box">
+                <p>📧 <strong>Questions?</strong> Contact us at <a
+                        href="mailto:support@orangepulse.net">support@orangepulse.net</a></p>
+                <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-muted);">We typically respond
+                    within 24-48 hours</p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-secondary">Return to Homepage</a>
+                <a href="OrangePulse_User_Manual.pdf" download class="btn btn-primary">Download Manual</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (minimal) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 OrangePulseBot. Educational resource - not financial advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Track successful purchase with query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get('session_id');
+
+        if (sessionId) {
+            console.log('Stripe checkout session:', sessionId);
+            // You can send this to analytics or your backend for tracking
+        }
+    </script>
+</body>
+
+</html>
