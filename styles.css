@@ -308,6 +308,8 @@ a:hover {
     object-fit: cover;
     z-index: 0;
     opacity: 0.4;
+    transform: scale(1.15);
+    transform-origin: center center;
 }
 
 /* Hero overlay - darker in center for text readability */
