@@ -352,9 +352,6 @@ a:hover {
 .hero-container {
     position: relative;
     z-index: 1;
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: 0 2rem;
 }
 
 .hero-split {
