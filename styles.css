@@ -247,15 +247,17 @@ a:hover {
 }
 
 .logo-text {
-    animation: logoPulse 4s ease-in-out infinite;
+    color: #FFFFFF;
 }
 
 .orange-part {
     font-weight: 800;
+    color: #FFFFFF;
 }
 
 .pulse-part {
     font-weight: 600;
+    animation: logoPulse 4s ease-in-out infinite;
 }
 
 @keyframes logoPulse {
@@ -747,6 +749,14 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.strategy-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .chart-placeholder {
