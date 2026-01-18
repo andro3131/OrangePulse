@@ -246,10 +246,28 @@ a:hover {
     object-fit: contain;
 }
 
-.version {
-    color: var(--brand-orange);
-    font-size: 0.875rem;
-    font-family: var(--font-mono);
+.logo-text {
+    animation: logoPulse 4s ease-in-out infinite;
+}
+
+.orange-part {
+    font-weight: 800;
+}
+
+.pulse-part {
+    font-weight: 600;
+}
+
+@keyframes logoPulse {
+
+    0%,
+    100% {
+        color: #FFFFFF;
+    }
+
+    50% {
+        color: #F7931A;
+    }
 }
 
 .nav-menu {
