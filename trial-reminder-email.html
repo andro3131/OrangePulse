@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header {
+            background: #3e4450;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .logo {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 30px;
+        }
+
+        .trial-notice {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .trial-notice h2 {
+            margin: 0 0 10px 0;
+            color: #e9983d;
+            font-size: 24px;
+        }
+
+        .trial-notice .big-text {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e9983d;
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #e9983d 0%, #FFA940 100%);
+            color: white !important;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(233, 152, 61, 0.3);
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(233, 152, 61, 0.4);
+        }
+
+        .footer {
+            background: #2c3338;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 12px 12px;
+            font-size: 14px;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #e9983d;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #e9983d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #E07E0F;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://orangepulse.net/Logo/orange-pulse-bot-logo.jpg" alt="OrangePulse Logo" class="logo">
+            <h1>⏰ Your Trial Ends in 2 Days</h1>
+            <p style="margin: 10px 0 0 0; font-size: 16px;">Make your decision before billing starts</p>
+        </div>
+
+        <div class="content">
+            <p style="font-size: 18px;">Hi there! 👋</p>
+
+            <p>This is a friendly reminder that your <strong>OrangePulse 14-day free trial</strong> is coming to an end.
+            </p>
+
+            <div class="trial-notice">
+                <h2>⏰ Trial Ends In:</h2>
+                <div class="big-text">2 DAYS</div>
+                <p style="margin: 10px 0 0 0; font-size: 16px;">Your first billing date: <strong>[DATE + 14
+                        DAYS]</strong></p>
+                <p style="margin: 5px 0 0 0; font-size: 16px;">Amount: <strong>$99/month</strong></p>
+            </div>
+
+            <h2 style="color: #e9983d; margin-top: 30px;">What Happens Next?</h2>
+
+            <div class="info-box">
+                <p style="margin: 0;"><strong>✅ If you want to CONTINUE:</strong></p>
+                <p style="margin: 5px 0 0 0;">Do nothing! Your subscription will automatically start, and you'll be
+                    charged $99 on [DATE + 14 DAYS]. You'll keep full access to all features.</p>
+            </div>
+
+            <div class="info-box">
+                <p style="margin: 0;"><strong>❌ If you want to CANCEL:</strong></p>
+                <p style="margin: 5px 0 0 0;">Simply reply to this email or cancel via your Stripe customer portal.
+                    Cancel before [DATE + 14 DAYS] and you pay <strong>$0</strong>.</p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+            <h3 style="color: #2c3338;">💬 Quick Questions:</h3>
+
+            <p><strong>How do I cancel?</strong><br>
+                Reply to this email, or visit your <a href="https://billing.stripe.com/p/login/[PORTAL_LINK]">Stripe
+                    Customer Portal</a> to manage your subscription.</p>
+
+            <p><strong>What if I cancel and change my mind later?</strong><br>
+                No problem! You can always restart your subscription at orangepulse.net.</p>
+
+            <p><strong>Can I get an extension?</strong><br>
+                Unfortunately, we can't extend the trial period. However, we offer a 30-day money-back guarantee if you
+                decide to continue.</p>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+            <h3 style="color: #2c3338;">📧 Need Help Deciding?</h3>
+            <p>If you have questions or need help getting the most out of OrangePulse, we're here for you:</p>
+            <ul>
+                <li>📧 <strong>Email:</strong> <a href="mailto:support@orangepulse.net">support@orangepulse.net</a></li>
+                <li>💬 <strong>Quick Questions:</strong> Just reply to this email!</li>
+            </ul>
+
+            <p style="margin-top: 30px; font-size: 16px; color: #555;">We hope you've enjoyed using OrangePulse! 📈<br>
+                <strong>The OrangePulse Team</strong>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p style="margin: 0 0 10px 0;">💡 <strong>Reminder:</strong> Cancel before [DATE + 14 DAYS] to avoid any
+                charges.</p>
+            <p style="margin: 0; opacity: 0.8;">© 2026 OrangePulse | Automated Trading Made Simple</p>
+        </div>
+    </div>
+</body>
+
+</html>
