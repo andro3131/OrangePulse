@@ -1,0 +1,3 @@
+Date,Email,Name,Plan,Amount,Payment Status,TV Username,Invite Sent,Status,Notes
+2026-01-19,example@email.com,John Doe,Lifetime,€599,Paid,john_trader,YES,Active,Test entry - delete this row
+2026-01-18,jane@gmail.com,Jane Smith,Monthly,€99,Paid,PENDING,NO,Waiting for username,
