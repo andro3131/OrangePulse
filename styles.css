@@ -950,6 +950,13 @@ a:hover {
     font-family: var(--font-mono);
 }
 
+.param-desc {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 /* === Risk Management === */
 .risk-section {
     padding: var(--section-padding) 0;
