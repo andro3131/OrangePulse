@@ -1608,8 +1608,17 @@ a:hover {
         left: 0;
     }
 
+    .nav-container {
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
     .hamburger {
         display: flex;
+        position: relative;
+        z-index: 1000;
     }
 
     .hero-split {
