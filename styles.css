@@ -957,6 +957,16 @@ a:hover {
     line-height: 1.5;
 }
 
+.param-example {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--brand-orange);
+    font-family: var(--font-mono);
+    margin-top: 0.5rem;
+    opacity: 0.85;
+}
+
 /* === Risk Management === */
 .risk-section {
     padding: var(--section-padding) 0;
