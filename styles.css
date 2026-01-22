@@ -1600,20 +1600,23 @@ a:hover {
 
     .nav-menu {
         position: fixed;
-        top: -100%;
+        top: 70px;
         left: 0;
         flex-direction: column;
         background: rgba(10, 14, 26, 0.98);
         width: 100%;
-        padding: 2rem;
+        padding: 0 2rem;
         gap: 1.5rem;
-        transition: top 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
         border-bottom: 1px solid var(--glass-border);
         z-index: 999;
     }
 
     .nav-menu.active {
-        top: 70px;
+        max-height: 500px;
+        padding: 2rem;
     }
 
     .navbar {
