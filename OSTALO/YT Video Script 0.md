@@ -1,4 +1,4 @@
-# YT Video Script 0 - OrangePulse (Bilingual)
+  # YT Video Script 0 - OrangePulse (Bilingual)
 
 Ta datoteka vsebuje scenarij za promocijski video. Tabela je spodaj poravnana tako, da je pregledna tudi v urejevalnikih besedila.
 
@@ -16,7 +16,8 @@ Ta datoteka vsebuje scenarij za promocijski video. Tabela je spodaj poravnana ta
 | **1:05 - 1:20** | Live Status Table. PnL & Fees.                | OrangePulse je vaš kontrolni center. Natančno sledenje provizijam za realen vpogled v profit. | OrangePulse is your command center. Precise tracking of fees for real profit insight.         |
 | **1:20 - 1:35** | Trailing TP (ARM -> BUFFER -> TRAIL).          | Ne zapirajte pozicij prezgodaj. Naš 3-stopenjski Trailing sistem sledi ceni do vrha.          | Don't close too early. Our 3-stage Trailing system follows the price to the absolute peak.     |
 | **1:35 - 1:45** | 3Commas & WunderTrading Logos.                 | Popolna integracija s platformama za takojšnjo izvedbo na vaši menjalnici.                    | Seamless integration with platforms for instant execution on your favorite exchange.          |
-| **1:45 - END**  | Logo & CTA. *Start Free Trial*.                | Prevzemite kontrolo še danes. Začnite 14-dnevni brezplačni preizkus. Vaša prednost na trgu.   | Take control today. Start your 14-day free trial. OrangePulse – your edge in the market.      |
+| **1:45 - 1:52** | TV Chart: History of successful trades (BO, SO, TP). Slow panning. | Poglejte dokaze v praksi – serija uspešnih sej, kjer vsak Take Profit potrjuje moč algoritma. | See the proof in action – a series of successful sessions where every Take Profit confirms the power of the algorithm. |
+| **1:52 - 2:02** | Logo drawing animation (slow). Text: *Start Free Trial*.                | Prevzemite kontrolo še danes. Začnite 14-dnevni brezplačni preizkus. Vaša prednost na trgu. | Take control today. Start your 14-day free trial. OrangePulse – your edge in the market. |
 
 ---
 
