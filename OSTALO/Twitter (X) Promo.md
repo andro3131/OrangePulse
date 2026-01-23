@@ -6,6 +6,17 @@ Tukaj je nekaj možnosti za objavo na X (Twitter). Priporočam uporabo slik ali 
 
 ## 🇸🇮 SLOVENSKA RAZLIČICA
 
+### **🚀 NOVO: Objava kanala (Kratka verzija)**
+NOVO! 🚀 Odprli smo YouTube kanal za **OrangePulse**! 
+
+Poglej si naš prvi video in spoznaj prihodnost avtomatiziranega trgovanja. 📈
+
+Video: [POVEZAVA_DO_VIDEA]
+
+#OrangePulse #Crypto #TradingBot
+
+---
+
 ### **Možnost 1: Kratko in udarno (Engagement focus)**
 Ste utrujeni od strmenja v grafe 24/7? 🥱 
 
@@ -36,6 +47,17 @@ Zakaj je to trenutno najboljši DCA bot na Pine Script v6 platformi? Poglejmo kl
 ---
 
 ## 🇬🇧 ENGLISH VERSION
+
+### **🚀 NEW: Channel Launch (Short version)**
+NEW! 🚀 Our YouTube channel is LIVE! 
+
+Check out the first video for **OrangePulse** and discover the future of automated trading. 📈
+
+Watch: [LINK_TO_VIDEO]
+
+#OrangePulse #CryptoBot #TradingView
+
+---
 
 ### **Option 1: Punchy (High conversion)**
 Tired of trading emotions? Let the machines do the work. 🤖📈
