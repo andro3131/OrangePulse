@@ -1,40 +1,40 @@
-# OSTALO - Non-Website Files
+# OSTALO - Project Resources & Marketing
 
-This directory contains project files that are not directly used by the website but are important for documentation, development, and customer management.
+This directory houses all non-website files, organized by their function within the OrangePulse ecosystem.
 
-## Contents:
+## 📁 Directory Structure:
 
-### Documentation
-- `CUSTOMER_MANAGEMENT_GUIDE.md` - Guide for managing customer subscriptions
-- `GITHUB_SETUP.md` - GitHub repository setup instructions
-- `ICLOUD_SMTP_SETUP.md` - Email server configuration
-- `STRIPE_SETUP.md` - Stripe payment integration guide
-- `TRIAL_EMAIL_SETUP.md` - Trial email automation setup
-- `email-templates.md` - Master email template documentation
-- `README.md` (this file)
+### [01_Product_Assets](file:///Users/andrejmezan/GitHub/OrangePulseBot/OSTALO/01_Product_Assets/)
+Core product files, source code, and user documentation.
+- `OrangePulse_Public.pine` - The open-source Lite version of the script.
+- `OrangePulse_v3.0_User_Manual.pdf` - Comprehensive user manual.
+- `OrangePulse_v3.0_QuickStart.pdf` - 2-page fast-track guide.
+- `OrangePulseBot.md` - Documentation of the core algorithm.
 
-### TradingView Scripts & Documentation
-- `OrangePulseBot.md` - Full OrangePulse v3.0 Pine Script source
-- `OrangePulse_Public.pine` - OrangePulse v3.0 Lite (public version)
-- `OrangePulse_Lite_Description.md` - TradingView description for Lite version
-- `OrangePulse v3.0-script.rtf` - TradingView publication text (rejected)
-- `OrangePulse v3.0 Lite-script.rtfd/` - Lite version publication text
-- `TradingView-problem.rtf` - Moderator rejection notice
+### [02_Business_Setup](file:///Users/andrejmezan/GitHub/OrangePulseBot/OSTALO/02_Business_Setup/)
+Infrastructure guides and operational documents.
+- `STRIPE_SETUP.md` - Payment gateway configuration.
+- `GITHUB_SETUP.md` - Repository management.
+- `ICLOUD_SMTP_SETUP.md` - Outgoing email server settings.
+- `TRIAL_EMAIL_SETUP.md` - Trial automation logic.
+- `CUSTOMER_MANAGEMENT_GUIDE.md` - Customer tracking procedures.
+- `customer-tracking-template.csv` - Template for lead management.
 
-### User Manuals
-- `OrangePulse_v3.0_User_Manual.pdf` - Complete user manual
-- `OrangePulse_v3.0_QuickStart.pdf` - Quick start guide
-- `vibebot_manual.txt` - Legacy manual (v2.3)
+### [03_Marketing_Content](file:///Users/andrejmezan/GitHub/OrangePulseBot/OSTALO/03_Marketing_Content/)
+Resources for social media growth and content strategy.
+- `TV-Twitter-LOG.md` - **History of published & planned content (TV Ideas, X Threads).**
+- `Twitter (X) Promo.md` - Ad copy and post drafts.
+- `YT Video Script 0.md` - YouTube channel intro & case study scripts.
+- `YT Video Description.md` - SEO-optimized video descriptions.
+- `OrangePulse_Lite_Description.md` - Compliant TradingView descriptions.
 
-### Email Templates (HTML)
-- `welcome-email-branded.html` - Welcome email for new customers
-- `trial-reminder-email.html` - Trial ending reminder
-- `tradingview-invite-email.html` - TradingView script access email
-
-### Testing & Utilities
-- `test.html` - Development test page
-- `customer-tracking-template.csv` - Customer management spreadsheet template
+### [04_Customer_Emails](file:///Users/andrejmezan/GitHub/OrangePulseBot/OSTALO/04_Customer_Emails/)
+Communication templates for direct customer interaction.
+- `email-templates.md` - Master list of text-based email scripts.
+- `welcome-email-branded.html` - Branded onboarding email.
+- `tradingview-invite-email.html` - Script access invitation.
+- `trial-reminder-email.html` - Retention email for trial users.
 
 ---
 
-**Note:** These files are essential for project management but are not deployed with the website.
+**Note:** Always check `03_Marketing_Content/TV-Twitter-LOG.md` before publishing new content to maintain strategy consistency.
