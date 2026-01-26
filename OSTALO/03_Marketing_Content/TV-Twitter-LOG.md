@@ -17,8 +17,10 @@ This file tracks all published educational content, TradingView Ideas, and socia
 - [ ] **Why "Step Scale" is Key to Surviving Huge Market Crashes**
   - *Topic:* Volatility expansion, geometric vs fixed gaps, capital efficiency.
 - [ ] **Anatomy of a DCA Trade: Turning a "Wrong Entry" into a Win**
+  - *Status:* DRAFTED (Jan 26) - Based on BTC $89k trade.
   - *Topic:* Detailed Case Study/Micro-view of a single complex trade.
 - [ ] **Bollinger Bands vs. RSI: Finding the Sweet Spot for Entries**
+  - *Status:* DRAFTED (Jan 26) - Designed for LITE Version.
   - *Topic:* Technical confluence, avoiding false signals in trending markets.
 - [ ] **Position Sizing Strategy: The Power of Volume Scaling (1.5x vs 2.0x)**
   - *Topic:* Martingale logic, risk of ruin vs speed of recovery.

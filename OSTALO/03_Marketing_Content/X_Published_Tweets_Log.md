@@ -1,11 +1,20 @@
 # OrangePulse X (Twitter) - Published Tweets Log
 
 **Account:** [@OrangePulseBot](https://x.com/OrangePulseBot)  
-**Last Updated:** 2026-01-25
+**Last Updated:** 2026-01-26
 
 ---
 
 ## 📊 Published Tweets (Chronological)
+10: 
+11: ### **2026-01-26 (Just now)**
+12: **Type:** Case Study - BTC Long Success  
+13: **Content:** "Precision in volatility. 🎯 While BTC was dropping, OrangePulse was mathematically scaling in. 1️⃣ Base Order at $89k 2️⃣ 3 Safety Orders (SO) filled 3️⃣ Avg price lowered 4️⃣ Clean TP at $87.5k DCA isn't about guessing bottoms—it's math. 🤖 #OrangePulse #BTC #DCA"  
+14: **Media:** Screenshot of TradingView chart with 3 SOs and TP  
+15: **Engagement:** TBD  
+16: 
+17: ---
+18: 
 
 ### **2026-01-25 (6 min ago)**
 **Type:** Educational - Cooldown Logic  
@@ -75,14 +84,12 @@
 - [x] Bitcoin RSI Repost (Jan 24 - engagement post)
 - [x] Cooldown Logic Education (Jan 25 - Exit/BO/SO cooldowns with image)
 - [x] Emergency SO Feature (Jan 25 - Black swan protection)
+- [x] BTC Case Study (Jan 26 - 3 SOs rescue trade)
 
 ### **🔄 Topics to Rotate (from backlog)**
+- [ ] Funding Fees impact on PnL (educational)
+    - *Draft:* "Funding fees: The silent killer... OrangePulse doesn't just trade; it tracks. ✅ Built-in fee simulation ✅ Precise trade duration tracking..."
 - [ ] Step Scale vs Volume Scale (educational)
-- [ ] Case Study: Real trade walkthrough
-- [ ] Behind the scenes: Backtesting results
-- [ ] Poll: Best strategy for bull market
-- [ ] Emergency SO System (risk management)
-- [ ] Funding Fees impact on PnL
 - [ ] Trailing TP mechanics
 
 ---
