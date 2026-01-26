@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangePulse Mission Control - Kanban Board</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-card strong {
+            display: block;
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+        
+        .board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .column {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .column-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .column-header h2 {
+            font-size: 1.2rem;
+            flex: 1;
+        }
+        
+        .column-header .count {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .blocked { border-left: 4px solid #ef4444; }
+        .in-progress { border-left: 4px solid #f59e0b; }
+        .todo { border-left: 4px solid #3b82f6; }
+        .done { border-left: 4px solid #10b981; }
+        
+        .task-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .task-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .task-id {
+            font-size: 0.75rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .task-title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .task-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        
+        .badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        
+        .priority-high { background: #ef4444; color: #fff; }
+        .priority-medium { background: #f59e0b; color: #fff; }
+        .priority-low { background: #3b82f6; color: #fff; }
+        
+        .time-badge {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        
+        .empty-column {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            padding: 40px 20px;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .board {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 MISSION CONTROL</h1>
+        <p>OrangePulse Project Dashboard</p>
+    </div>
+    
+    <div class="stats">
+        <div class="stat-card">
+            <strong>123</strong>
+            <span>X Followers</span>
+        </div>
+        <div class="stat-card">
+            <strong>105</strong>
+            <span>Posts</span>
+        </div>
+        <div class="stat-card">
+            <strong>3</strong>
+            <span>TV Ideas</span>
+        </div>
+        <div class="stat-card">
+            <strong>1</strong>
+            <span>YT Videos</span>
+        </div>
+    </div>
+    
+    <div class="board">
+        <!-- BLOCKED COLUMN -->
+        <div class="column blocked">
+            <div class="column-header">
+                <h2>🔴 BLOCKED</h2>
+                <span class="count">0</span>
+            </div>
+            <div class="empty-column">
+                Nothing blocked 🎉
+            </div>
+        </div>
+        
+        <!-- IN PROGRESS COLUMN -->
+        <div class="column in-progress">
+            <div class="column-header">
+                <h2>🔄 IN PROGRESS</h2>
+                <span class="count">1</span>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-001</div>
+                <div class="task-title">YouTube Video Scripts</div>
+                <div class="task-meta">
+                    <span class="badge priority-high">HIGH</span>
+                    <span class="badge time-badge">⏱️ 4h</span>
+                </div>
+                <p style="font-size: 0.85rem; margin-top: 10px; color: rgba(255,255,255,0.7);">
+                    Create scripts for 3 tutorial videos (Setup, Strategy Selection, Position Sizing)
+                </p>
+            </div>
+        </div>
+        
+        <!-- TO DO COLUMN -->
+        <div class="column todo">
+            <div class="column-header">
+                <h2>📋 TO DO</h2>
+                <span class="count">5</span>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-002</div>
+                <div class="task-title">TradingView Idea #4 - "Cooldown Periods"</div>
+                <div class="task-meta">
+                    <span class="badge priority-high">HIGH</span>
+                    <span class="badge time-badge">⏱️ 2h</span>
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-003</div>
+                <div class="task-title">X Content Calendar (Next 7 Days)</div>
+                <div class="task-meta">
+                    <span class="badge priority-medium">MEDIUM</span>
+                    <span class="badge time-badge">⏱️ 1h</span>
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-004</div>
+                <div class="task-title">Email Sequence Draft (Trial Users)</div>
+                <div class="task-meta">
+                    <span class="badge priority-medium">MEDIUM</span>
+                    <span class="badge time-badge">⏱️ 3h</span>
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-005</div>
+                <div class="task-title">Reddit Strategy Post (r/algotrading)</div>
+                <div class="task-meta">
+                    <span class="badge priority-low">LOW</span>
+                    <span class="badge time-badge">⏱️ 2h</span>
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-006</div>
+                <div class="task-title">Partnership Outreach (3Commas/WunderTrading)</div>
+                <div class="task-meta">
+                    <span class="badge priority-low">LOW</span>
+                    <span class="badge time-badge">⏱️ 1h</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- DONE COLUMN -->
+        <div class="column done">
+            <div class="column-header">
+                <h2>✅ DONE</h2>
+                <span class="count">4</span>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-010</div>
+                <div class="task-title">X Content (2 tweets today)</div>
+                <div style="font-size: 0.8rem; margin-top: 8px; color: rgba(255,255,255,0.6);">
+                    Completed: Jan 25, 2026
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-009</div>
+                <div class="task-title">ServerMode Toggle App</div>
+                <div style="font-size: 0.8rem; margin-top: 8px; color: rgba(255,255,255,0.6);">
+                    Completed: Jan 25, 2026
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-008</div>
+                <div class="task-title">GitHub Repo Sync</div>
+                <div style="font-size: 0.8rem; margin-top: 8px; color: rgba(255,255,255,0.6);">
+                    Completed: Jan 25, 2026
+                </div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-id">MP-007</div>
+                <div class="task-title">X Account Audit & Tweet Log Setup</div>
+                <div style="font-size: 0.8rem; margin-top: 8px; color: rgba(255,255,255,0.6);">
+                    Completed: Jan 25, 2026
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+        <p>Last Updated: 2026-01-25 | <a href="./README.md" style="color: #667eea;">View Details</a></p>
+    </div>
+</body>
+</html>
