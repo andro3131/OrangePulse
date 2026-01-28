@@ -9,7 +9,7 @@ This file tracks all published educational content, TradingView Ideas, and socia
 | 2026-01-27 | **The Geometry of Survival: Fixed vs. Step Scale Spacing** | Step Scale, Volatility Mgmt, Capital Efficiency | Lite (v3.0) | Published |
 | 2026-01-27 | **The Manual Intervention Trap** | Trading Psychology, Discipline, SO execution | Lite (v3.0) | Published |
 | 2026-01-27 | **Geometric Step Scale (TV Idea Repost)** | Repost of TV Idea with same logic | Lite (v3.0) | Published |
-| 2026-01-28 | **The Anatomy of a "Target Drag"** | Average Price vs TP move, visualizing Break-Even | Lite (v3.0) | DRAFTED |
+| 2026-01-28 | **The Anatomy of a "Target Drag"** | Average Price vs TP move, visualizing Break-Even | Lite (v3.0) | Published |
 
 ---
 
@@ -28,8 +28,9 @@ This file tracks all published educational content, TradingView Ideas, and socia
 - [x] **DCA is Psychology** (Reply to "What's harder in trading?")
 - [x] **Bullish Cross Hype** (Reply to "Parabolic moves" tweet)
 - [x] **Shorting DCA Promotion** (Linking to TradingView Idea #3)
+- [x] **Fed Day vs Math** (Jan 28 - Math over emotions during FOMC)
+- [x] **Trailing TP Mechanics** (Jan 28 - Capturing the 'extra' move)
 - [ ] **Fed Rate Day Caution** (Jan 28 - Focus on safety/stopping bots during high volatility)
-- [ ] **Trailing TP Mechanics** (Educational - how to capture the 'extra' move)
 
 ---
 

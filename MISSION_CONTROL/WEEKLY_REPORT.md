@@ -29,6 +29,7 @@
 - ✅ Migriranih 18 arhivskih blog objav v Studio Mars spletno stran.
 - ✅ Zabeležena preferenca za angleščino pri X/TradingView v MEMORY.md.
 - ✅ Pripravljeni osnutki za X objave (Fed Day, Trailing TP).
+- ✅ Objavi "Fed Day vs Math" in "Trailing TP" sta bili objavljeni na X (Jan 28).
 - ✅ Pripravljena ideja za TradingView (The Anatomy of a "Target Drag").
 - ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
 

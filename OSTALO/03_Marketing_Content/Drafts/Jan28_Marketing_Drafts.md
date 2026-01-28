@@ -2,7 +2,7 @@
 
 ## 🐦 X (Twitter) Posts (English)
 
-### **Tweet 1: The FOMO vs. Math (Fed Day Special)**
+### **Tweet 1: The FOMO vs. Math (Fed Day Special) - [PUBLISHED JAN 28]**
 > "Markets are screaming today due to the Fed, but my bot is whispering. 🤫 While humans trade on headlines and heartbeats, OrangePulse trades on math and volatility. 🤖 
 > 
 > No panic. No manual overrides. Just systematic execution. Let the noise fade away while the algorithm works the ladder. 🪜📊 
@@ -15,16 +15,26 @@
 > Survive the crash. Thrive in the bounce. 🛡️
 > 🔗 https://orangepulse.net"
 
-### **Tweet 3: The Trailing Advantage**
+### **Tweet 3: The Trailing Advantage - [PUBLISHED JAN 28]**
 > "Fixed Take Profits are for scalpers. Trailing Take Profits are for winners. 🏆 Why exit at 1% if the trend is pushing for 5%? 📈 OrangePulse's 3-stage Trailing logic (ARM → BUFFER → TRAIL) squeezes every drop of profit while protecting your downside. 💧💰
 > 
 > Stop leaving money on the table: https://orangepulse.net"
 
----
+### **Idea 4: Backtesting Realism - "Too Good to be True"**
+**Title:** Backtesting Realism: Why a 100% Win Rate is a Red Flag 🚩
+**Content:** 
+"We’ve all seen the 'Holy Grail' backtests on social media—perfect equity curves with zero drawdown. But in the real world of algorithmic trading, if a backtest looks too good to be true, it usually is. 
 
-## 📈 TradingView Ideas (English)
+Professional strategy development requires brutal honesty. Are you including exchange fees (Maker/Taker)? Are you accounting for slippage on market orders? Are you testing across different market regimes (Bull, Bear, and the dreaded Sideways)? 
 
-### **Idea 1: The "Target Drag" - Visualizing the DCA Exit**
+OrangePulse LITE includes a transparent 'Fee Simulation' in its status table. We don't hide the costs because we know that a 70% win rate with proper fee accounting is worth infinitely more than a fake 100% win rate that disappears on the first live trade. 
+
+**Takeaway:** Don't chase the curve; chase the logic. Math is your only edge."
+
+**🇸🇮 Navodila za sliko (TV):**
+> *Pripravi screenshot 'Strategy Tester' zavihka na TradingView za OrangePulse. Izberi par in časovni okvir, kjer so rezultati realni (npr. BTC 1h). Označi 'List of Trades', da se vidijo vključene provizije (Commission) pri vsakem trejdu. Zraven na grafu pokaži 'Status Table', kjer je izpostavljen 'Total Fees' podatek. To dokazuje, da algoritem upošteva realne stroške trgovanja.*
+
+### **Idea 1: The "Target Drag" - Visualizing the DCA Exit - [PUBLISHED JAN 28]**
 **Title:** The Anatomy of a "Target Drag": Why DCA Bots Don't Need a Full Recovery
 **Content:** 
 "One of the biggest misconceptions in trading is that if you buy an asset at $100 and it drops to $80, you need it to go back to $100 to break even. In a DCA (Dollar Cost Averaging) system, every Safety Order (SO) 'drags' your Take Profit (TP) target closer to the current price. 
