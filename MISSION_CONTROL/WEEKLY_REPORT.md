@@ -42,11 +42,10 @@
 
 | Metric | Start (Jan 25) | Current | Change | Goal |
 |--------|----------------|---------|--------|------|
-| X Followers | 123 | 123 | 0 | 150 |
-| X Posts | 103 | 105 | +2 | 113+ |
+| X Posts | 103 | 110 | +7 | 113+ |
 | YT Videos | 1 | 1 | 0 | 1 |
 | YT Scripts | 1 | 1 | 0 | 3 |
-| TV Ideas | 3 | 3 | 0 | 4 |
+| TV Ideas | 3 | 5 | +2 | 4 |
 
 ---
 

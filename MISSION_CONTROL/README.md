@@ -10,9 +10,9 @@
 | Metric | Value | Status |
 |--------|-------|--------|
 | X Followers | 123 | 🟢 Growing |
-| X Posts (Total) | 105 | ✅ Active |
+| X Posts (Total) | 110 | ✅ Active |
 | YouTube Videos | 1 | 🟡 Need more |
-| TradingView Ideas | 3 | 🟢 Good start |
+| TradingView Ideas | 5 | 🟢 Good start |
 | Website Status | Live | ✅ orangepulse.net |
 
 ---
