@@ -20,7 +20,7 @@
 > 
 > Stop leaving money on the table: https://orangepulse.net"
 
-### **Tweet 4: 1-Minute Promo Video (Bilingual/English)**
+### **Tweet 4: 1-Minute Promo Video (Bilingual/English) - [PUBLISHED JAN 28]**
 > "1 minute of your time could change your trading forever. ⏱️🍊
 > 
 > Stop staring at charts and start automating your discipline. Discover **OrangePulse v3.0** — the most advanced DCA engine for TradingView. 🤖📈
@@ -32,6 +32,40 @@
 > Watch the 60-second promo: [LINK DO VIDEA]
 > 
 > Start your 14-day FREE trial: https://orangepulse.net"
+
+---
+
+## 📈 TradingView Ideas (English)
+
+### **Idea 1: The "Target Drag" - Visualizing the DCA Exit - [PUBLISHED JAN 28]**
+**Title:** The Anatomy of a "Target Drag": Why DCA Bots Don't Need a Full Recovery
+**Content:** 
+"One of the biggest misconceptions in trading is that if you buy an asset at $100 and it drops to $80, you need it to go back to $100 to break even. In a DCA (Dollar Cost Averaging) system, every Safety Order (SO) 'drags' your Take Profit (TP) target closer to the current price. 
+
+Using the OrangePulse LITE visual framework, we can see exactly how this works. By adding volume at lower levels, your average price drops significantly. The bot automatically recalculates the new TP line based on the updated average. This means a minor 5% relief bounce can exit a trade that is currently 15% in drawdown. 
+
+**Conclusion:** Success in DCA isn't about picking the bottom; it's about the speed of the target adjustment. Math > Predictions."
+
+**🇸🇮 Navodila za sliko (TV):**
+> *Pripravi screenshot BTC/USDT na 1h ali 4h grafu. Najdi situacijo, kjer je cena padla in so se sprožili vsaj 3-4 Safety Orderji (modre puščice). Jasno se mora videti rumena črta (Average Price) in zelena črta (Take Profit), ki sta se ob vsakem SO spustili nižje. Z TradingView orodjem 'Arrow' označi razdaljo od prvega vstopa do končnega TP, da pokažeš 'drag' efekt.*
+
+---
+
+### **Idea 5: The "Flash Crash" Buffer - Visualizing MSOs**
+**Title:** The "Flash Crash" Buffer: Why Your Bot Needs an Emergency Safety Net 🦢⚫
+**Content:** 
+"Standard DCA strategies are great for normal market cycles, but they often get 'blown out' during a 20% flash crash. When your standard 10 Safety Orders are filled, most bots just sit there, exposed, waiting for a recovery that might take weeks. 
+
+OrangePulse introduces the **Emergency MSO (Manual Safety Order)** layer. Think of it as a final buffer zone. These orders are strategically placed at extreme historical support levels and only activate when the 'normal' ladder is fully exhausted. 
+
+By having these pre-calculated emergency orders, you significantly lower your final break-even price at the absolute bottom of a crash, allowing you to exit in profit on the very first relief bounce. 
+
+**Don't just survive the crash. Capture it.**"
+
+**🇸🇮 Navodila za sliko (TV):**
+> *Poišči 'Flash Crash' na grafu (npr. velik rdeč kandelabel z dolgim wick-om). Pokaži standardno mrežo (prvih 10 SO), ki se konča sredi padca. Nato z drugačno barvo (npr. rdečo ali oranžno) označi spodnji del, kjer bi se sprožili 'Emergency MSOs' (označi jih s TV 'Callout' orodjem). Pokaži, kako ta zadnji sloj dramatično spusti 'Take Profit' črto prav v območje, kjer se je cena odbila (wick).*
+
+---
 
 ### **Idea 4: Backtesting Realism - "Too Good to be True"**
 **Title:** Backtesting Realism: Why a 100% Win Rate is a Red Flag 🚩
@@ -46,18 +80,6 @@ OrangePulse LITE includes a transparent 'Fee Simulation' in its status table. We
 
 **🇸🇮 Navodila za sliko (TV):**
 > *Pripravi screenshot 'Strategy Tester' zavihka na TradingView za OrangePulse. Izberi par in časovni okvir, kjer so rezultati realni (npr. BTC 1h). Označi 'List of Trades', da se vidijo vključene provizije (Commission) pri vsakem trejdu. Zraven na grafu pokaži 'Status Table', kjer je izpostavljen 'Total Fees' podatek. To dokazuje, da algoritem upošteva realne stroške trgovanja.*
-
-### **Idea 1: The "Target Drag" - Visualizing the DCA Exit - [PUBLISHED JAN 28]**
-**Title:** The Anatomy of a "Target Drag": Why DCA Bots Don't Need a Full Recovery
-**Content:** 
-"One of the biggest misconceptions in trading is that if you buy an asset at $100 and it drops to $80, you need it to go back to $100 to break even. In a DCA (Dollar Cost Averaging) system, every Safety Order (SO) 'drags' your Take Profit (TP) target closer to the current price. 
-
-Using the OrangePulse LITE visual framework, we can see exactly how this works. By adding volume at lower levels, your average price drops significantly. The bot automatically recalculates the new TP line based on the updated average. This means a minor 5% relief bounce can exit a trade that is currently 15% in drawdown. 
-
-**Conclusion:** Success in DCA isn't about picking the bottom; it's about the speed of the target adjustment. Math > Predictions."
-
-**🇸🇮 Navodila za sliko (TV):**
-> *Pripravi screenshot BTC/USDT na 1h ali 4h grafu. Najdi situacijo, kjer je cena padla in so se sprožili vsaj 3-4 Safety Orderji (modre puščice). Jasno se mora videti rumena črta (Average Price) in zelena črta (Take Profit), ki sta se ob vsakem SO spustili nižje. Z TradingView orodjem 'Arrow' označi razdaljo od prvega vstopa do končnega TP, da pokažeš 'drag' efekt.*
 
 ---
 

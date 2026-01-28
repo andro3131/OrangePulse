@@ -15,10 +15,10 @@ This file tracks all published educational content, TradingView Ideas, and socia
 
 ## 📅 Planned / Backlog Ideas (TradingView)
 
-- [ ] **Time Window Filtering: Why consistent bots don't trade 24/7/365**
-  - *Topic:* News avoidance, high volatility session filtering.
-- [ ] **Volatility-Adjusted DCA: Why fixed targets fail in dynamic markets**
-  - *Topic:* ATR-based spacing vs fixed % spacing.
+- **Backtesting Realism: Why 100% Win Rate is a Red Flag**
+  - *Status:* DRAFTED (Jan 28) - Overfitting and fee inclusion.
+- [ ] **The "Flash Crash" Buffer: Visualizing Emergency MSOs**
+  - *Topic:* How MSOs act as a final safety net during extreme drops.
 
 ---
 
@@ -30,6 +30,7 @@ This file tracks all published educational content, TradingView Ideas, and socia
 - [x] **Shorting DCA Promotion** (Linking to TradingView Idea #3)
 - [x] **Fed Day vs Math** (Jan 28 - Math over emotions during FOMC)
 - [x] **Trailing TP Mechanics** (Jan 28 - Capturing the 'extra' move)
+- [x] **1-Minute Promo Video** (Jan 28 - Official promo video launch)
 - [ ] **Fed Rate Day Caution** (Jan 28 - Focus on safety/stopping bots during high volatility)
 
 ---
