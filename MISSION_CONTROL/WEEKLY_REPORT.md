@@ -24,8 +24,13 @@
 **Sunday, Jan 26:**
 *(No tasks completed yet)*
 
-**Monday, Jan 27:**
-*(Planned: YouTube scripts completion)*
+**Wednesday, Jan 28:**
+- ✅ Posodobljene slike v objavah Studio Mars (M-Tom, Luka Groboljšek).
+- ✅ Migriranih 18 arhivskih blog objav v Studio Mars spletno stran.
+- ✅ Zabeležena preferenca za angleščino pri X/TradingView v MEMORY.md.
+- ✅ Pripravljeni osnutki za X objave (Fed Day, Trailing TP).
+- ✅ Pripravljena ideja za TradingView (The Anatomy of a "Target Drag").
+- ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
 
 ---
 

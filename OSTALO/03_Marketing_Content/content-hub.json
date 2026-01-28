@@ -1,0 +1,227 @@
+[
+  {
+    "id": "tv-001",
+    "platform": "TV",
+    "date": "2026-01-24",
+    "title": "The Math of Mean Reversion",
+    "content": "Dollar Cost Averaging (DCA) is usually associated with \"buying the dip.\" But in a professional trading environment, the same mathematical principles can be applied to Shorting overextended rallies. Today we are looking at how to use OrangePulse Lite to capture \"Mean Reversion\" moves to the downside.\n\n1. Identifying the \"Exhaustion\"\nInstead of just shorting blindly, we look for Confluence:\nPrice is above the Upper Bollinger Band (statistically overextended).\nRSI is in the Overbought zone (>70).\nThis suggests the \"pump\" is losing steam and a return to the mean (average price) is likely.\n\n2. Building the Short Position\nShorting a strong rally is dangerous because of \"short squeezes.\" This is where DCA shines:\nWe enter a small Base Order (BO) at the first sign of weakness.\nIf the price continues to push higher, we add to our position via Safety Orders (SO).\nThis moves our \"Short Average Price\" higher, making it much easier to exit in profit on the first minor retracement.\n\n3. Psychology of a Short DCA\nWhile most traders are \"FOMO-ing\" into the top, the DCA bot is mechanically building a position. The goal isn't to pick the exact top, but to create an average entry that is higher than the eventual \"Mean Reversion\" point.\n\n4. Risk Management\nShorting has theoretically unlimited risk, so Max Safety Orders and a clear Stop Loss are mandatory. The Lite script allows you to visualize exactly where your \"danger zone\" starts.\n\nConclusion: DCA is a tool for volatility management, not just for long-term investing. By applying it to the short side, you can stay profitable even when the macro trend is bearish.",
+    "status": "published",
+    "tags": ["DCA", "Lite v3.0", "Shorting"]
+  },
+  {
+    "id": "tv-002",
+    "platform": "TV",
+    "date": "2026-01-24",
+    "title": "Maximizing Bull Runs: Fixed TP vs. Trailing Take Profit",
+    "content": "One of the hardest decisions in trading is knowing when to exit. If you exit too early with a fixed Take Profit (TP), you might miss out on a \"moon\" move. If you hold too long, the price might reverse and wipe out your gains. Today, we are exploring the logic of Trailing Take Profit—a dynamic way to stay in the trend as long as possible.\n\n1. The Concept of \"Activation\"\nA Trailing TP doesn't start immediately. In the OrangePulse Lite logic, we use a Trail Activation %. The trade first needs to reach a certain \"safety profit\" level. Once hit, the bot \"arms\" the trailing logic (visualized by the purple line on the chart).\n\n2. The \"Trailing Distance\"\nOnce armed, the bot looks at the Highest High (for Longs) reached during the trade. The exit trigger is set at a fixed percentage below that high point. If the price continues to rise, the exit line (purple) follows it up. The price is effectively given \"room to breathe,\" but the profit is locked in if a reversal occurs.\n\n3. Fixed TP vs. Trailing TP\nLook at the attached chart: A Fixed TP would have closed the trade at the green line, missing the final leg of the rally. The Trailing TP (purple) stayed active during the entire push, closing the trade only when the momentum actually stalled and the price dropped by the trailing distance.\n\n4. The Trade-off\nFixed TP: Higher reliability and faster capital turnover. Great for sideways markets.\nTrailing TP: Captures the \"meat\" of a trend. Essential for parabolic moves.\n\nEducational takeaway: Don’t be afraid to let your winners run, but always have a mechanical way to lock in those gains. Using a trailing algorithm removes the \"greed factor\" and ensures you exit based on price action, not emotions.",
+    "status": "published",
+    "tags": ["Trailing TP", "Risk Mgmt", "Lite v3.0"]
+  },
+  {
+    "id": "tv-003",
+    "platform": "TV",
+    "date": "2026-01-26",
+    "title": "BB + RSI: Ultimate Mean Reversion",
+    "content": "Most traders use Bollinger Bands or RSI in isolation, but they often lead to \"false breakouts\" or \"riding the bands.\" This idea breaks down the power of Confluence—where mathematical extremes meet market exhaustion—using the OrangePulse LITE framework.\n\n📊 Visual Breakdown (Analyzing the Screenshot)\n1. The Entry: Pure Confluence\nLook at the most recent trade on the right side of the chart:\nBollinger Bands: Price pierces the lower band, indicating a statistical deviation from the mean.\nRSI: Simultaneously, the RSI drops below 30, confirming that the asset is mathematically oversold.\nThe Result: This \"Sweet Spot\" is where the probability of a relief bounce is highest.\n\n2. The \"Step-down\" Effect (DCA in Action)\nNotice the Yellow line (Average Price) and Green line (Take Profit):\nEvery time a Safety Order (SO) is filled (indicated by the small blue arrows), these lines instantly drop.\nWhy this matters: You don't need the price to return to your original entry to profit. The bot automatically \"brings the target to the price.\"\nIn this 1h BTC chart, you can see how the target was brought down significantly, allowing for a much faster exit on the first sign of recovery.\n\n3. Precision & Discipline\nAutomated trading isn't about \"winning every trade\" instantly. It's about having a plan for when the market moves against you.\nPatience: The bot waits for the exact moment both conditions align.\nExecution: No emotions, no hesitation. Just math.\n\n⚙️ How to Use This\nThis exact logic—the confluence triggers, the automated DCA lines, and the real-time status table—is the core engine of the OrangePulse v3.0 LITE script. It's designed to be a reliable \"Mean Reversion\" tool for traders who want to automate their discipline without complex setups.",
+    "status": "published",
+    "tags": ["Bollinger", "RSI", "Confluence"]
+  },
+  {
+    "id": "tv-004",
+    "platform": "TV",
+    "date": "2026-01-27",
+    "title": "The Geometry of Survival: Fixed vs. Step Scale Spacing",
+    "content": "Summary: Most traders fail because they use static grids. When the market enters a high-volatility \"crush\" phase, a fixed 1% or 2% gap between orders gets filled too quickly, leaving the trader with a massive position and no capital at the actual bottom.\n\nThe Strategy: This idea explores the Step Scale (Price Deviation Step Scale) feature in OrangePulse LITE. By using a multiplier (e.g., 1.1x or 1.2x), each subsequent Safety Order is placed further away than the previous one.\n\nWhy this matters:\n1. Capital Preservation: You save your largest orders for the extreme ends of the move.\n2. Wider Coverage: You can cover a 30% drop with the same number of orders that would only cover 15% in a fixed grid.\n3. Mathematical Edge: It prevents \"running out of fuel\" during black swan events.\n\nStudy the attached chart to see how a geometric ladder significantly improves the survivability of a Mean Reversion bot compared to a standard linear grid.",
+    "status": "published",
+    "tags": ["Step Scale", "Risk Management"]
+  },
+  {
+    "id": "x-post-021",
+    "platform": "X",
+    "date": "2026-01-27",
+    "title": "Geometry of Survival (Repost)",
+    "content": "📐 Why most DCA bots fail during a crash: Static Spacing.\n\nIf your bot buys every 1% fixed, you run out of capital halfway through a 20% drop. That’s a death sentence for your portfolio. 💀\n\nOrangePulse LITE uses \"Step Scale\" (Geometric Spacing). As the market falls, the gaps between your orders automatically widen.\n\n✅ Capital Efficiency: You save your biggest buys for the actual bottom.\n✅ Wider Coverage: Cover a 30% drop with ease.\n✅ Math over Hope: Don't just catch the knife—manage the fall.",
+    "status": "published",
+    "tags": ["Step Scale", "DCA"]
+  },
+  {
+    "id": "x-post-020",
+    "platform": "X",
+    "date": "2026-01-27",
+    "title": "The Manual Intervention Trap",
+    "content": "The biggest enemy of a profitable DCA bot isn't the market—it’s the human sitting behind the screen. 🤖📉\n\nHere is the typical cycle:\n1️⃣ Bot enters a trade.\n2️⃣ Price drops, first 2 Safety Orders fill.\n3️⃣ Trader panics, looks at PnL, and \"pauses\" the bot.\n4️⃣ Market hits the 3rd SO (the one that would have lowered the average price perfectly) and bounces.\n5️⃣ Trader misses the exit and is stuck with a \"red\" bag.\n\nThe Lesson: If you’ve backtested your risk, trust the math. The Safety Orders are there for a reason.",
+    "status": "published",
+    "tags": ["Psychology", "Discipline"]
+  },
+  {
+    "id": "x-post-019",
+    "platform": "X",
+    "date": "2026-01-26",
+    "title": "Funding fees: Silent Killer?",
+    "content": "Funding fees: The silent killer of long-term DCA? 🩸\n\nMany traders forget that holding a position isn't free. Small fees + multiple SOs = eroded PnL. OrangePulse doesn't just trade; it tracks. 📊\n\n✅ Built-in fee simulation\n✅ Precise trade duration tracking\n✅ Real-time fee impact visualization",
+    "status": "published",
+    "tags": ["Fees", "DCA"]
+  },
+  {
+    "id": "x-post-018",
+    "platform": "X",
+    "date": "2026-01-26",
+    "title": "OrangePulse hit again!",
+    "content": "OrangePulse hit again! 🎯\n\nWhile BTC was dropping, OrangePulse was mathematically scaling in.\n1️⃣ Base Order at $89k\n2️⃣ 3 Safety Orders (SO) filled on the dip\n3️⃣ Average price brought down significantly\n4️⃣ Clean Exit (Take Profit) at $88k\n\nDCA isn't about guessing the bottom, it's about managing the journey.",
+    "status": "published",
+    "tags": ["Profit", "BTC"]
+  },
+  {
+    "id": "x-post-017",
+    "platform": "X",
+    "date": "2026-01-25",
+    "title": "Black Swan Protection",
+    "content": "Black swan protection 🦢 ⚫\n\nOrangePulse has 3 Emergency SOs beyond the standard 10. They only activate when:\n✅ All 10 regular SOs filled\n✅ Specific time threshold passed\n✅ Market still moving against you\n\nYour safety net when crypto goes wild. 🛡️ #DCA #RiskManagement",
+    "status": "published",
+    "tags": ["Risk", "Safety Net"]
+  },
+  {
+    "id": "x-post-016",
+    "platform": "X",
+    "date": "2026-01-25",
+    "title": "Cooldown periods therapy",
+    "content": "⏸️ Cooldown periods = therapy for your trading bot.\n\n3 types keep your bot disciplined:\n→ After EXIT: pause before re-entry\n→ After BO: confirmation window\n→ Between SOs: avoid panic pyramiding\n\nResult? -60% impulsive losses in backtests. Your bot shouldn't trade like you on FOMO.",
+    "status": "published",
+    "tags": ["Cooldown", "Discipline"]
+  },
+  {
+    "id": "x-post-015",
+    "platform": "X",
+    "date": "2026-01-24",
+    "title": "DCA isn't just for Longs",
+    "content": "DCA isn’t just for \"buying the dip.\" 📉\n\nMost traders view Dollar Cost Averaging as a HODL tool. But in professional trading, the same math applies to shorting overextended rallies. 👩‍🔬\n\nBy using a Short DCA ladder, we:\n🟠 Stay disciplined during \"FOMO\" pumps\n🟠 Mathematically lower average entry",
+    "status": "published",
+    "tags": ["Shorting", "DCA"]
+  },
+  {
+    "id": "x-post-014",
+    "platform": "X",
+    "date": "2026-01-24",
+    "title": "100 followers & Verified",
+    "content": "100 followers & Verified. 🚀\n\nThis is just the beginning of the journey for OrangePulse. 🔥 Our goal from day one was clear: to build a DCA system that actually understands market dynamics rather than just \"blindly\" buying every dip.",
+    "status": "published",
+    "tags": ["Milestone", "Verified"]
+  },
+  {
+    "id": "x-post-013",
+    "platform": "X",
+    "date": "2026-01-23",
+    "title": "YouTube Channel LIVE",
+    "content": "NEW! 🚀 Our YouTube channel is LIVE!\n\nCheck out the first video for OrangePulse and discover the future of automated trading. 📈\n\nWatch: youtube.com/watch?v=QAiVI3\n\n#OrangePulse #CryptoBot #TradingView",
+    "status": "published",
+    "tags": ["YouTube", "Launch"]
+  },
+  {
+    "id": "x-post-012",
+    "platform": "X",
+    "date": "2026-01-23",
+    "title": "Back in standby mode",
+    "content": "After a week of disciplined DCA and a successful Take Profit, OrangePulse is now back in standby mode. 🍊\n\nCurrently scanning the market and waiting for the perfect conditions to strike again. Success is all about waiting for the right moment. 🤖 🔭 ☕️ #DCA",
+    "status": "published",
+    "tags": ["Standby", "Patience"]
+  },
+  {
+    "id": "x-post-011",
+    "platform": "X",
+    "date": "2026-01-22",
+    "title": "v3.0 Lite Release",
+    "content": "🍊 Just released OrangePulse v3.0 Lite!\n\nA free, open-source Mean Reversion DCA strategy for TradingView!\n📷 Bollinger Bands + RSI entry\n📷 Trailing TP\n\nFull source code available here: tradingview.com/script/u2fMlhr",
+    "status": "published",
+    "tags": ["Release", "Open Source"]
+  },
+  {
+    "id": "x-post-010",
+    "platform": "X",
+    "date": "2026-01-22",
+    "title": "Target Reached Scalp",
+    "content": "TARGET REACHED ALREADY! 🎯 🍊\n\nOur manual BTC scalp is closed at $89,500. Quick in, quick out. We don’t just build bots; we trade alongside them. 📈\n\n✅ Stay tuned for the next setup. 🚀 #Bitcoin #OrangePulse",
+    "status": "published",
+    "tags": ["Profit", "Scalping"]
+  },
+  {
+    "id": "x-post-009",
+    "platform": "X",
+    "date": "2026-01-22",
+    "title": "Official Start Guide",
+    "content": "🍊 Get the most out of OrangePulse v3.0 Lite! 🚀\n\nWe’ve published the official Quick Start Guide. Everything you need to know about our DCA ladder, cooldowns, and risk management in one place. 📚\n\nCheck it out: 🔗 orangepulse.net/OrangePulse_v3",
+    "status": "published",
+    "tags": ["Guide", "Education"]
+  },
+  {
+    "id": "x-post-008",
+    "platform": "X",
+    "date": "2026-01-21",
+    "title": "BTC $96k -> $87k Recovery",
+    "content": "🍊 OrangePulse v3.0 just closed a trade! 📉\nBTC dipped from $96k → $87k\n📊 Bot executed 9 Safety Orders\n📈 TP hit as price recovered\n💰 Result: +$3,636\n\nDCA in action - no panic, just averaging down and waiting for recovery 🧘 #Bitcoin #DCA",
+    "status": "published",
+    "tags": ["Profit", "Case Study"]
+  },
+  {
+    "id": "x-post-007",
+    "platform": "X",
+    "date": "2026-01-20",
+    "title": "Trailing TP logic",
+    "content": "Don't leave money on the table. 💰 Trailing TP in action:\n🚀 Target hit, but the bot didn't exit.\n📈 It trailed the rally higher, squeezing more profit from the bounce.\n✅ Captured the full move instead of a fixed 1% exit.\nRide the trend. 🌊 #BTC #TrailingTP",
+    "status": "published",
+    "tags": ["Trailing TP", "Profit"]
+  },
+  {
+    "id": "x-post-006",
+    "platform": "X",
+    "date": "2026-01-20",
+    "title": "Black Swan Control",
+    "content": "The ultimate safety net for \"Black Swan\" events. 🛡️\n\nOrangePulse Emergency SOs (MSO) give you manual control when it matters most:\n✅ 3 High-volume backup orders\n✅ Timestamp-based manual triggers\n✅ Built for extreme market drawdowns\nPrepared traders win. 🚀 🦾 #BTC #DCA",
+    "status": "published",
+    "tags": ["Safety Net", "MSO"]
+  },
+  {
+    "id": "x-post-005",
+    "platform": "X",
+    "date": "2026-01-20",
+    "title": "DCA is math game",
+    "content": "DCA is a math game. 📐 Settings that make the difference:\n✅ Volume Scale (Heavy avg lowering)\n✅ Step Scale (Optimized spacing)\n✅ Built-in Cooldowns (Risk control)\nPrecise automation > Emotional guessing. 🛡️ 🦾 #DCA #TradingView",
+    "status": "published",
+    "tags": ["Math", "Automation"]
+  },
+  {
+    "id": "x-post-004",
+    "platform": "X",
+    "date": "2026-01-19",
+    "title": "Real Automation Zero Manual",
+    "content": "Real automation = Zero manual work. 🤖\n\nOrangePulse alert fires → JSON webhook sent → WunderTrading/3Commas executes → Trade happens.\nAll within seconds. While you sleep. ⚡ This is how pro traders scale. 📈 #TradingView #Automation",
+    "status": "published",
+    "tags": ["Automation", "Workflow"]
+  },
+  {
+    "id": "x-post-003",
+    "platform": "X",
+    "date": "2026-01-19",
+    "title": "Official Launch",
+    "content": "OrangePulse is officially LIVE! 🚀\n\nProfessional DCA Trading Bot for TradingView. 4 battle-tested strategies. Fully automated with WunderTrading/3Commas. Your edge in the markets is finally here. 🍊🤖\n\n#CryptoTrading #Automation #OrangePulse",
+    "status": "published",
+    "tags": ["Launch", "Bot"]
+  },
+  {
+    "id": "x-post-002",
+    "platform": "X",
+    "date": "2026-01-19",
+    "title": "The DCA philosophy",
+    "content": "Why DCA? Because predicting bottoms is a fool's errand. Managing drawdowns is a professional's career. 🧘‍♂️\n\nOrangePulse doesn't predict. It reacts, scales, and recovers. Math > Ego.\n\n#DCA #TradingPsychology #Bitcoin",
+    "status": "published",
+    "tags": ["Philosophy", "DCA"]
+  },
+  {
+    "id": "x-post-001",
+    "platform": "X",
+    "date": "2026-01-19",
+    "title": "Welcome to OrangePulse",
+    "content": "Welcome to the future of automated trading. 🍊\n\nFollow us for technical setups, DCA insights, and professional automation tips. Let's grow together. 🚀🤖",
+    "status": "published",
+    "tags": ["Intro", "Community"]
+  }
+]
