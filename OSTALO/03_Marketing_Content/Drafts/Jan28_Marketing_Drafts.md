@@ -83,6 +83,14 @@ OrangePulse LITE includes a transparent 'Fee Simulation' in its status table. We
 
 ---
 
+### **Tweet 5: The Target Drag Effect (Based on TV Idea)**
+> "Stop waiting for a full recovery. 🛑 DCA isn't about picking bottoms—it's about the 'Target Drag'. 🎯
+> 
+> Every Safety Order pulls your Take Profit closer to the price. Result? You exit in profit on a 5% bounce instead of waiting for 20%. 📈🤖
+> 
+> See the math in action: [LINK DO TV IDEJE]
+> 🔗 https://orangepulse.net"
+
 ### **Idea 2: The "News Filter" - Why Your Bot Needs Sleep**
 **Title:** Time Window Filtering: Why Consistent Bots Don't Trade 24/7/365
 **Content:**
