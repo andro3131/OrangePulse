@@ -35,6 +35,7 @@
 - ✅ Pripravljena in objavljena TV ideja "V-Recovery Logic" (Jan 28).
 - ✅ Pripravljen osnutek X objave za "Target Drag" efekt.
 - ✅ Pripravljena in objavljena X objava za "V-Recovery Math" (Jan 28).
+- ✅ Pripravljena objava za X ob izidu Video 1 (BREAKING: Setup Guide).
 - ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
 - ✅ Posodobljen CRON trigger za MC Autopilot na 3 ure (prej 1 ura).
 
