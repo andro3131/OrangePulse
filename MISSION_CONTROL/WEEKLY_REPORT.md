@@ -31,7 +31,8 @@
 - ✅ Pripravljeni osnutki za X objave (Fed Day, Trailing TP).
 - ✅ Objavi "Fed Day vs Math" in "Trailing TP" sta bili objavljeni na X (Jan 28).
 - ✅ Objava "1-Minute Promo Video" je bila objavljena na X (Jan 28).
-- ✅ Pripravljena ideja za TradingView (The Anatomy of a "Target Drag").
+- ✅ Pripravljena in objavljena TV ideja "DCA Target Drag" (Jan 28).
+- ✅ Pripravljen osnutek X objave za "Target Drag" efekt.
 - ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
 - ✅ Posodobljen CRON trigger za MC Autopilot na 3 ure (prej 1 ura).
 

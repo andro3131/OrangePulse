@@ -30,8 +30,8 @@ This file tracks all published educational content, TradingView Ideas, and socia
 - [x] **Shorting DCA Promotion** (Linking to TradingView Idea #3)
 - [x] **Fed Day vs Math** (Jan 28 - Math over emotions during FOMC)
 - [x] **Trailing TP Mechanics** (Jan 28 - Capturing the 'extra' move)
-- [x] **1-Minute Promo Video** (Jan 28 - Official promo video launch)
-- [ ] **Fed Rate Day Caution** (Jan 28 - Focus on safety/stopping bots during high volatility)
+- [x] **DCA Target Drag** (Jan 28 - Why you don't need full recovery)
+- [ ] **Flash Crash Buffer** (Jan 28 - Visualizing Emergency MSOs)
 
 ---
 
