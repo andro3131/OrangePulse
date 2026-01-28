@@ -9,6 +9,7 @@ This file tracks all published educational content, TradingView Ideas, and socia
 | 2026-01-27 | **The Geometry of Survival: Fixed vs. Step Scale Spacing** | Step Scale, Volatility Mgmt, Capital Efficiency | Lite (v3.0) | Published |
 | 2026-01-27 | **The Manual Intervention Trap** | Trading Psychology, Discipline, SO execution | Lite (v3.0) | Published |
 | 2026-01-27 | **Geometric Step Scale (TV Idea Repost)** | Repost of TV Idea with same logic | Lite (v3.0) | Published |
+| 2026-01-28 | **The V-Recovery Logic** | Why DCA targets move faster than price | Lite (v3.0) | Published |
 | 2026-01-28 | **The Anatomy of a "Target Drag"** | Average Price vs TP move, visualizing Break-Even | Lite (v3.0) | Published |
 
 ---
@@ -31,6 +32,7 @@ This file tracks all published educational content, TradingView Ideas, and socia
 - [x] **Fed Day vs Math** (Jan 28 - Math over emotions during FOMC)
 - [x] **Trailing TP Mechanics** (Jan 28 - Capturing the 'extra' move)
 - [x] **DCA Target Drag** (Jan 28 - Why you don't need full recovery)
+- [x] **V-Recovery Math** (Jan 28 - Why DCA exits faster)
 - [ ] **Flash Crash Buffer** (Jan 28 - Visualizing Emergency MSOs)
 
 ---

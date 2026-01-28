@@ -32,7 +32,9 @@
 - ✅ Objavi "Fed Day vs Math" in "Trailing TP" sta bili objavljeni na X (Jan 28).
 - ✅ Objava "1-Minute Promo Video" je bila objavljena na X (Jan 28).
 - ✅ Pripravljena in objavljena TV ideja "DCA Target Drag" (Jan 28).
+- ✅ Pripravljena in objavljena TV ideja "V-Recovery Logic" (Jan 28).
 - ✅ Pripravljen osnutek X objave za "Target Drag" efekt.
+- ✅ Pripravljena in objavljena X objava za "V-Recovery Math" (Jan 28).
 - ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
 - ✅ Posodobljen CRON trigger za MC Autopilot na 3 ure (prej 1 ura).
 
@@ -42,10 +44,10 @@
 
 | Metric | Start (Jan 25) | Current | Change | Goal |
 |--------|----------------|---------|--------|------|
-| X Posts | 103 | 110 | +7 | 113+ |
+| X Posts | 103 | 111 | +8 | 113+ |
 | YT Videos | 1 | 1 | 0 | 1 |
 | YT Scripts | 1 | 1 | 0 | 3 |
-| TV Ideas | 3 | 5 | +2 | 4 |
+| TV Ideas | 3 | 6 | +3 | 4 |
 
 ---
 
