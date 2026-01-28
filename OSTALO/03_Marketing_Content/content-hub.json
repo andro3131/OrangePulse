@@ -36,6 +36,42 @@
     "tags": ["Step Scale", "Risk Management"]
   },
   {
+    "id": "tv-005",
+    "platform": "TV",
+    "date": "2026-01-28",
+    "title": "The Anatomy of a \"Target Drag\": Why DCA Bots Don't Need a Full Recovery",
+    "content": "One of the biggest misconceptions in trading is that if you buy an asset at $100 and it drops to $80, you need it to go back to $100 to break even. In a DCA (Dollar Cost Averaging) system, every Safety Order (SO) 'drags' your Take Profit (TP) target closer to the current price.\n\nUsing the OrangePulse LITE visual framework, we can see exactly how this works. By adding volume at lower levels, your average price drops significantly. The bot automatically recalculates the new TP line based on the updated average. This means a minor 5% relief bounce can exit a trade that is currently 15% in drawdown.\n\nConclusion: Success in DCA isn't about picking the bottom; it's about the speed of the target adjustment. Math > Predictions.",
+    "status": "published",
+    "tags": ["DCA", "Math", "Education"]
+  },
+  {
+    "id": "x-post-024",
+    "platform": "X",
+    "date": "2026-01-28",
+    "title": "1-Minute Promo Video Launch",
+    "content": "1 minute of your time could change your trading forever. ⏱️🍊\n\nStop staring at charts and start automating your discipline. Discover OrangePulse v3.0 — the most advanced DCA engine for @TradingView. 🤖📈\n\n✅ 4 Battle-tested strategies\n✅ Smart DCA & Emergency SOs\n✅ 3-stage Trailing Take Profit\n\nWatch the 60-second promo: [LINK TO VIDEO]\n\nStart your 14-day FREE trial: https://orangepulse.net",
+    "status": "published",
+    "tags": ["Promo", "Launch"]
+  },
+  {
+    "id": "x-post-023",
+    "platform": "X",
+    "date": "2026-01-28",
+    "title": "Trailing Advantage",
+    "content": "Fixed Take Profits are for scalpers. Trailing Take Profits are for winners. 🏆 Why exit at 1% if the trend is pushing for 5%? 📈 OrangePulse's 3-stage Trailing logic (ARM → BUFFER → TRAIL) squeezes every drop of profit while protecting your downside. 💧💰\n\nStop leaving money on the table: https://orangepulse.net",
+    "status": "published",
+    "tags": ["Trailing TP", "Profit"]
+  },
+  {
+    "id": "x-post-022",
+    "platform": "X",
+    "date": "2026-01-28",
+    "title": "FOMO vs Math (Fed Day)",
+    "content": "Markets are screaming today due to the Fed, but my bot is whispering. 🤫 While humans trade on headlines and heartbeats, OrangePulse trades on math and volatility. 🤖\n\nNo panic. No manual overrides. Just systematic execution. Let the noise fade away while the algorithm works the ladder. 🪜📊\n\nTrust the math: https://orangepulse.net",
+    "status": "published",
+    "tags": ["Fed Day", "Math"]
+  },
+  {
     "id": "x-post-021",
     "platform": "X",
     "date": "2026-01-27",
