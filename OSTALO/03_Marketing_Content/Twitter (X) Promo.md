@@ -59,18 +59,20 @@ Watch: [LINK_TO_VIDEO]
 
 ---
 
-### **Option 1: Punchy (High conversion)**
-Tired of trading emotions? Let the machines do the work. 🤖📈
+### **Option 1: Punchy (For 1-Minute Promo Video)**
+1 minute of your time could change your trading forever. ⏱️🍊
 
-Discover **OrangePulse** – the advanced Pine Script v6 DCA bot for @TradingView. 
+Stop staring at charts and start automating your discipline. Discover **OrangePulse v3.0** — the most advanced DCA engine for @TradingView. 🤖📈
 
 ✅ 4 Battle-tested strategies
 ✅ Smart DCA & Emergency SOs
-✅ 3-stage Trailing TP
+✅ 3-stage Trailing Take Profit
 
-Watch the full promo: [LINK_TO_VIDEO]
+Watch the 60-second promo: [LINK_TO_VIDEO]
 
-#Crypto #TradingView #OrangePulse #PassiveIncome #TradingBot
+Start your 14-day FREE trial: https://orangepulse.net
+
+#Crypto #TradingView #OrangePulse #TradingBot
 
 ---
 

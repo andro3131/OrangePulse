@@ -20,6 +20,19 @@
 > 
 > Stop leaving money on the table: https://orangepulse.net"
 
+### **Tweet 4: 1-Minute Promo Video (Bilingual/English)**
+> "1 minute of your time could change your trading forever. ⏱️🍊
+> 
+> Stop staring at charts and start automating your discipline. Discover **OrangePulse v3.0** — the most advanced DCA engine for TradingView. 🤖📈
+> 
+> ✅ 4 Battle-tested strategies
+> ✅ Smart DCA & Emergency SOs
+> ✅ 3-stage Trailing Take Profit
+> 
+> Watch the 60-second promo: [LINK DO VIDEA]
+> 
+> Start your 14-day FREE trial: https://orangepulse.net"
+
 ### **Idea 4: Backtesting Realism - "Too Good to be True"**
 **Title:** Backtesting Realism: Why a 100% Win Rate is a Red Flag 🚩
 **Content:** 

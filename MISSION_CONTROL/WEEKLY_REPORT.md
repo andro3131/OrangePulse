@@ -32,6 +32,7 @@
 - ✅ Objavi "Fed Day vs Math" in "Trailing TP" sta bili objavljeni na X (Jan 28).
 - ✅ Pripravljena ideja za TradingView (The Anatomy of a "Target Drag").
 - ✅ Napisan prvi YouTube scenarij: "Setup in 5 Minutes" (MP-001).
+- ✅ Posodobljen CRON trigger za MC Autopilot na 3 ure (prej 1 ura).
 
 ---
 
